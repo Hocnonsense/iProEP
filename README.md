@@ -1,4 +1,11 @@
-***Introduction***           
+/*
+ * @Date: 2023-09-10 17:42:30
+ * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
+ * @LastEditTime: 2023-09-10 19:21:26
+ * @FilePath: /iProEP_localtool/README.txt
+ * @Description:
+ */
+***Introduction***
 
 The iProEP suite provides online tools for predicting promoter of mRNA on Windows System.
 
@@ -17,8 +24,8 @@ To prepare a new release.
     http://lin-group.cn/server/iProEP/iProEP_localtool.rar
 
 2. Prepare your query sequence in fasta format (ref example.txt)
-    Each sequence must start with a greater-than symbol (">") in the first column. 
-    The words right after the ">" symbol in the single initial line are optional and only used for 
+    Each sequence must start with a greater-than symbol (">") in the first column.
+    The words right after the ">" symbol in the single initial line are optional and only used for
     the purpose of identification and description.
 
 
@@ -36,6 +43,6 @@ To prepare a new release.
 
 ***Citing***
 
-To cite the full MEME suite, please cite:  
+To cite the full MEME suite, please cite:
 Hong-Yan Lai &, Zhao-Yue Zhang &, Zhen-Dong Su, Wei Su, Hui Ding, Wei Chen*, Hao Lin*.
 (2019) iProEP: a computational predictor for predicting promoter. Molecular Therapy - Nucleic Acids, 17: 337-346. (2018 IF: 5.919)
