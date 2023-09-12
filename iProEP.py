@@ -3,7 +3,7 @@
  * @Date: 2023-09-10 17:42:30
  * @Editors: Hong-Yan Lai et al.
  * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
- * @LastEditTime: 2023-09-12 16:51:37
+ * @LastEditTime: 2023-09-12 17:11:13
  * @FilePath: /iProEP_localtool/iProEP.py
  * @Description:
 """
@@ -67,25 +67,21 @@ def merge2svmfile(newsvmfile, svmfile1, svmfile2):
             fobjw.writelines(eachline + "\n")
 
 
-def getOptimalFea(mrmrOrderFile, allFeaFile, feaNum, optimalFeaFile):
-    orderFile = open(mrmrOrderFile, "r")
-    order = []
-    for eachline in orderFile:
-        order.append(eachline.strip().split("\t")[1])
-    orderFile.close()
+def getOptimalFea(
+    mrmrOrderFile: str, allFeaFile: str, feaNum: int, optimalFeaFile: str
+):
+    with open(mrmrOrderFile, "r") as orderFile:
+        order = [eachline.strip().split("\t")[1] for eachline in orderFile]
 
-    fobjr = open(allFeaFile, "r")
-    fobjw = open(optimalFeaFile, "w")
-    for eachline in fobjr:
-        eachvalue = eachline.strip().split("\t")
-        fobjw.write(eachvalue[0] + "\t")
-        for k in range(feaNum):
-            index = int(order[k])
-            content = "%d:%s\t" % (k + 1, eachvalue[index].split(":")[1])
-            fobjw.write(content)
-        fobjw.write("\n")
-    fobjw.close()
-    fobjr.close()
+    with open(allFeaFile, "r") as fobjr, open(optimalFeaFile, "w") as fobjw:
+        for eachline in fobjr:
+            eachvalue = eachline.strip().split("\t")
+            fobjw.write(eachvalue[0] + "\t")
+            for k in range(feaNum):
+                index = int(order[k])
+                content = "%d:%s\t" % (k + 1, eachvalue[index].split(":")[1])
+                fobjw.write(content)
+            fobjw.write("\n")
 
 
 def getFea(bestn, silce_fa):
@@ -95,18 +91,15 @@ def getFea(bestn, silce_fa):
     annotation = []
     sequences = []
 
-    with open(silce_fa, "r") as f:
-        for eachline in f:
-            templine = eachline.strip()
-            if eachline[0] == ">":
-                annotation.append(templine)
-            else:
-                sequences.append(eachline)
-    if sequences == []:
-        raise ValueError(
-            "There is no sequence that meets the requirements. Program Terminated."
-        )
+    for seq in SeqIO.parse(silce_fa, "fasta"):
+        annotation.append(seq.description)
+        sequences.append(str(seq.seq))
+
+    assert (
+        sequences
+    ), "There is no sequence that meets the requirements. Program Terminated."
     print("Feature Encoding(time-consuming)...\n...")
+
     pseKNC.pseKNC(sequences, "pseFea.txt")
     PCSF.getPCSF(sequences, "pcsfFea.txt")
     merge2svmfile("pse&pcsfFea.txt", "pseFea.txt", "pcsfFea.txt")
@@ -114,52 +107,42 @@ def getFea(bestn, silce_fa):
     return annotation
 
 
-def runSVM(pathPrefix: Path):
-    commands = []
-    commands.append(
-        f"{pathPrefix}/libsvm-3.22/svm-scale -r scale.rule optimalFea.txt > seq.scale"
+def runSVM(pathPrefix: Path, Typepath: str):
+    os.system(
+        f"{pathPrefix}/libsvm-3.22/svm-scale "
+        f"-r {Typepath}/scale.rule optimalFea.txt > seq.scale"
     )
-    commands.append(
-        f"{pathPrefix}/libsvm-3.22/svm-predict -b 1 seq.scale predict.model res.txt >out.txt"
+    os.system(
+        f"{pathPrefix}/libsvm-3.22/svm-predict "
+        f"-b 1 seq.scale {Typepath}/predict.model res.txt > out.txt"
     )
 
-    for eachCmd in commands:
-        os.system(eachCmd)
 
-
-def generateResult(annotation: list, outfile: Path):
+def generateResult(annotation: list, outfile: Path, outseq: Path):
     outResult = "res.txt"
     countn = 0
     countp = 0
-    with (
-        open(outResult, "r") as f,
-        open(outfile, "w") as g,
-        open("../Promoter.txt", "w") as g1,
-    ):
-        g.write(
-            "***All slide window sequence number prediction probability***\n"
-            "Number\tannotation\tPromoter\tPromoter probability\n"
-        )
+    with open(outResult, "r") as f, open(outfile, "w") as g, open(outseq, "w") as g1:
+        g.write("Number\tannotation\tPromoter\tPromoter probability\n")
         for eachline in f:
             temp = eachline.split(" ")
             if temp[0] == "labels":
-                pass
-            else:
-                countn += 1
-                temp = eachline.split(" ")
-                if temp[0] == "1":
-                    countp += 1
-                    g.write(
-                        "%s\t%s\tYes\t%s\n" % (countn, annotation[countn - 1], temp[1])
-                    )
-                    g1.write(
-                        "%s is predicted as Promoter. Its probability score of being a promoter is %s.\n"
-                        % (annotation[countn - 1], temp[1])
-                    )
-                if temp[0] == "2":
-                    g.write(
-                        "%s\t%s\tNo\t%s\n" % (countn, annotation[countn - 1], temp[1])
-                    )
+                continue
+            countn += 1
+            temp = eachline.split(" ")
+            if temp[0] == "1":
+                countp += 1
+                g.write(
+                    "%s\t%s\tYes\t%s\n" % (countn, annotation[countn - 1], temp[1])
+                )
+                g1.write(
+                    "%s is predicted as Promoter. Its probability score of being a promoter is %s.\n"
+                    % (annotation[countn - 1], temp[1])
+                )
+            if temp[0] == "2":
+                g.write(
+                    "%s\t%s\tNo\t%s\n" % (countn, annotation[countn - 1], temp[1])
+                )
     return countp
 
 
@@ -197,8 +180,10 @@ def main(species: str, seqfile: str, debug: bool):
     print("Sliding Window Finished.")
     annotation = getFea(mp.bestn, "slide_seq.fasta")
 
-    runSVM(pathPrefix)
-    countp = generateResult(annotation, pathPrefix / "All_Result.txt")
+    runSVM(pathPrefix, Typepath)
+    countp = generateResult(
+        annotation, pathPrefix / "All_Result.txt", pathPrefix / "Promoter.txt"
+    )
 
     if not debug:
         for each in [
