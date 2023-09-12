@@ -1,11 +1,17 @@
-/*
+<!--
  * @Date: 2023-09-10 17:42:30
+ * @Editors: Hong-Yan Lai et al.
  * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
- * @LastEditTime: 2023-09-10 19:21:26
- * @FilePath: /iProEP_localtool/README.txt
+ * @LastEditTime: 2023-09-10 19:25:28
+ * @FilePath: /iProEP_localtool/README.md
  * @Description:
- */
-***Introduction***
+-->
+Introduction
+===
+
+- this ia modify version of iProEP edited by Hwrn
+
+---
 
 The iProEP suite provides online tools for predicting promoter of mRNA on Windows System.
 
@@ -16,7 +22,7 @@ You can also use the iProEP via its website at
 http://lin-group.cn/server/iProEP/
 
 
-***Users Notes***
+## Users Notes
 
 To prepare a new release.
 
@@ -28,20 +34,23 @@ To prepare a new release.
     The words right after the ">" symbol in the single initial line are optional and only used for
     the purpose of identification and description.
 
-
-
 3. Once you are ready to create a release candidate tag the current revision
-   // for windows
-        cd iProEP_localtool/
-        python3 iProEP.py -s C -i example.fasta
-   //for Linux
-        cd iProEP_localtool/
-        cd libsvm-3.22 && make clean && make && cd ..
-        python3 iProEP.py -s C -i example.fasta
+    ```powershell
+    # for windows
+    cd iProEP_localtool/
+    python3 iProEP.py -s C -i example.fasta
+    ```
+    ```bash
+    # for Linux
+    cd iProEP_localtool/
+    cd libsvm-3.22 && make clean && make && cd ..
+    python3 iProEP.py -s C -i example.fasta
+    ```
+
 4. Open All_Result.csv and Promoter.txt get the results.
 
 
-***Citing***
+## Citing
 
 To cite the full MEME suite, please cite:
 Hong-Yan Lai &, Zhao-Yue Zhang &, Zhen-Dong Su, Wei Su, Hui Ding, Wei Chen*, Hao Lin*.
