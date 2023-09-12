@@ -37,21 +37,21 @@ def slide(seqfile: Path, pretypelength: int):
                 annotation = eachline.strip()
             elif eachline.strip() != "":
                 seq = eachline.strip().upper()
-                if len(seq) >= pretypelength:
-                    for i in range(len(seq) - pretypelength + 1):
-                        g.write(
-                            "%s,site:%s-%s\n%s\n"
-                            % (
-                                annotation,
-                                i,
-                                pretypelength + i,
-                                seq[i : pretypelength + i],
-                            )
-                        )
-                else:
+                if len(seq) < pretypelength:
                     print(
                         "The length of the %s is less than %s-bp, it has no biological meaning for promoter."
                         % (annotation, pretypelength)
+                    )
+                    continue
+                for i in range(len(seq) - pretypelength + 1):
+                    g.write(
+                        "%s,site:%s-%s\n%s\n"
+                        % (
+                            annotation,
+                            i,
+                            pretypelength + i,
+                            seq[i : pretypelength + i],
+                        )
                     )
 
 
@@ -177,7 +177,13 @@ Useful:
 )
 @click.option("-s", "--species", type=str, help="species")
 @click.option("-i", "--seqfile", type=str, help="input filename")
-def main(species: str, seqfile: str):
+@click.option(
+    "--debug",
+    is_flag=True,
+    flag_value=False,
+    help="set this flag to keep immediate files",
+)
+def main(species: str, seqfile: str, debug: bool):
     pathPrefix = Path(__file__).parent
     mp = getmodelpara(species)
     Typepath = str(pathPrefix / mp.modelType)
@@ -192,15 +198,17 @@ def main(species: str, seqfile: str):
 
     runSVM(pathPrefix)
     countp = generateResult(annotation, pathPrefix / "All_Result.txt")
-    for each in [
-        "pse&pcsfFea.txt",
-        "pseFea.txt",
-        "pcsfFea.txt",
-        "optimalFea.txt",
-        "seq.scale",
-        "out.txt",
-    ]:
-        os.remove(each)
+
+    if not debug:
+        for each in [
+            "pse&pcsfFea.txt",
+            "pseFea.txt",
+            "pcsfFea.txt",
+            "optimalFea.txt",
+            "seq.scale",
+            "out.txt",
+        ]:
+            os.remove(each)
     print(
         f"Prediction Finished!\n"
         f"***There are {countp} promoter in the query sequences.***\n"
