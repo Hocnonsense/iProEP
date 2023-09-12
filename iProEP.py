@@ -3,7 +3,7 @@
  * @Date: 2023-09-10 17:42:30
  * @Editors: Hong-Yan Lai et al.
  * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
- * @LastEditTime: 2023-09-12 15:05:31
+ * @LastEditTime: 2023-09-12 15:46:34
  * @FilePath: /iProEP_localtool/iProEP.py
  * @Description:
 """
@@ -91,14 +91,14 @@ def getOptimalFea(mrmrOrderFile, allFeaFile, feaNum, optimalFeaFile):
     fobjr.close()
 
 
-def getFea(bestn):
+def getFea(bestn, silce_fa):
     import PCSF
     import pseKNC
 
     annotation = []
     sequences = []
 
-    with open("slide_seq.fasta", "r") as f:
+    with open(silce_fa, "r") as f:
         for eachline in f:
             templine = eachline.strip()
             if eachline[0] == ">":
@@ -106,8 +106,9 @@ def getFea(bestn):
             else:
                 sequences.append(eachline)
     if sequences == []:
-        print("There is no sequence that meets the requirements. Program Terminated.")
-        sys.exit()
+        raise ValueError(
+            "There is no sequence that meets the requirements. Program Terminated."
+        )
     print("Feature Encoding(time-consuming)...\n...")
     pseKNC.pseKNC(sequences, "pseFea.txt")
     PCSF.getPCSF(sequences, "pcsfFea.txt")
@@ -181,7 +182,7 @@ Useful:
 @click.option(
     "--debug",
     is_flag=True,
-    flag_value=False,
+    flag_value=True,
     help="set this flag to keep immediate files",
 )
 def main(species: str, seqfile: str, debug: bool):
@@ -197,7 +198,7 @@ def main(species: str, seqfile: str, debug: bool):
         slide(pathPrefix / seqfile, mp.pretypelength), "slide_seq.fasta", "fasta-2line"
     )
     print("Sliding Window Finished.")
-    annotation = getFea(mp.bestn)
+    annotation = getFea(mp.bestn, "slide_seq.fasta")
 
     runSVM(pathPrefix)
     countp = generateResult(annotation, pathPrefix / "All_Result.txt")
