@@ -3,7 +3,7 @@
  * @Date: 2023-09-10 17:42:30
  * @Editors: Hong-Yan Lai et al.
  * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
- * @LastEditTime: 2023-09-12 15:46:34
+ * @LastEditTime: 2023-09-12 16:51:37
  * @FilePath: /iProEP_localtool/iProEP.py
  * @Description:
 """
@@ -57,17 +57,14 @@ def slide(seqfile: Path, pretypelength: int):
 
 
 def merge2svmfile(newsvmfile, svmfile1, svmfile2):
-    fobjr1 = open(svmfile1, "r")
-    fobjr2 = open(svmfile2, "r")
-    fobjw = open(newsvmfile, "w")
-    for eachline1 in fobjr1:
-        eachline1 = eachline1.strip()
-        eachline2 = fobjr2.readline().strip()
-        eachline = eachline1 + "\t" + eachline2
-        fobjw.writelines(eachline + "\n")
-    fobjw.close()
-    fobjr1.close()
-    fobjr2.close()
+    with (
+        open(svmfile1, "r") as fobjr1,
+        open(svmfile2, "r") as fobjr2,
+        open(newsvmfile, "w") as fobjw,
+    ):
+        for eachline1, eachline2 in zip(fobjr1, fobjr2):
+            eachline = eachline1.strip() + "\t" + eachline2.strip()
+            fobjw.writelines(eachline + "\n")
 
 
 def getOptimalFea(mrmrOrderFile, allFeaFile, feaNum, optimalFeaFile):
