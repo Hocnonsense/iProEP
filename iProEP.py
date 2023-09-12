@@ -2,87 +2,57 @@
 
 import sys
 import os
-import shutil
+from typing import NamedTuple
+import click
+from pathlib import Path
 
 
-def printHelpInfo():
-    print(
-        """
-Useful:
-    python PseKNC.py -s H -i inputFilename
-
-  parameter description:
-
-    -s: The species type for prediction. (required). "H" for H. sapiens, "D" for D. melanogaster, "C" for C. elegans, "B" for B. subtilis and "E" for E. coli, respectively.
-    -i: The input filename. (required)
-    """
-    )
-    exit(0)
-
-
-def obtainExternalParameters():
-    try:
-        if sys.argv[1] == "-s":
-            species = sys.argv[2]
-        else:
-            assert 0
-        if sys.argv[3] == "-i":
-            in_filename = sys.argv[4]
-        else:
-            assert 0
-    except:
-        printHelpInfo()
-    return species, in_filename
+class ModelPara(NamedTuple):
+    pretypelength: int
+    modelType: str
+    bestn: int
 
 
 def getmodelpara(preType):
     if preType == "H":
-        pretypelength = 300
-        modelType = "hsmodel"
-        bestn = 55
+        return ModelPara(300, "hsmodel", 55)
     if preType == "D":
-        pretypelength = 300
-        modelType = "dmmodel"
-        bestn = 893
+        return ModelPara(300, "dmmodel", 893)
     if preType == "C":
-        pretypelength = 300
-        modelType = "cemodel"
-        bestn = 67
+        return ModelPara(300, "cemodel", 67)
     if preType == "B":
-        pretypelength = 81
-        modelType = "bsmodel"
-        bestn = 82
+        return ModelPara(81, "bsmodel", 82)
     if preType == "E":
-        pretypelength = 81
-        modelType = "ecmodel"
-        bestn = 410
-    return pretypelength, modelType, bestn
+        return ModelPara(81, "ecmodel", 410)
+    raise KeyError("Unsupported Type Name")
 
 
-def slide(seqfile, pretypelength):
-    f = open(seqfile, "r")
-    g = open("slide_seq.fasta", "w")
+def slide(seqfile: Path, pretypelength: int):
     annotation = ""
-
     seq = ""
-    for eachline in f:
-        if eachline[0] == ">":
-            annotation = eachline.strip()
-        elif eachline.strip() != "":
-            seq = eachline.strip().upper()
-            if len(seq) >= pretypelength:
-                for i in range(len(seq) - pretypelength + 1):
-                    g.write(
-                        "%s,site:%s-%s\n%s\n"
-                        % (annotation, i, pretypelength + i, seq[i : pretypelength + i])
+
+    with open(seqfile, "r") as f, open("slide_seq.fasta", "w") as g:
+        for eachline in f:
+            if eachline[0] == ">":
+                annotation = eachline.strip()
+            elif eachline.strip() != "":
+                seq = eachline.strip().upper()
+                if len(seq) >= pretypelength:
+                    for i in range(len(seq) - pretypelength + 1):
+                        g.write(
+                            "%s,site:%s-%s\n%s\n"
+                            % (
+                                annotation,
+                                i,
+                                pretypelength + i,
+                                seq[i : pretypelength + i],
+                            )
+                        )
+                else:
+                    print(
+                        "The length of the %s is less than %s-bp, it has no biological meaning for promoter."
+                        % (annotation, pretypelength)
                     )
-            else:
-                print(
-                    "The length of the %s is less than %s-bp, it has no biological meaning for promoter."
-                    % (annotation, pretypelength)
-                )
-    g.close()
-    f.close()
 
 
 def merge2svmfile(newsvmfile, svmfile1, svmfile2):
@@ -121,17 +91,19 @@ def getOptimalFea(mrmrOrderFile, allFeaFile, feaNum, optimalFeaFile):
 
 
 def getFea(bestn):
-    f = open("slide_seq.fasta", "r")
+    import pseKNC
+    import PCSF
+
     annotation = []
     sequences = []
 
-    for eachline in f:
-        templine = eachline.strip()
-        if eachline[0] == ">":
-            annotation.append(templine)
-        else:
-            sequences.append(eachline)
-    f.close()
+    with open("slide_seq.fasta", "r") as f:
+        for eachline in f:
+            templine = eachline.strip()
+            if eachline[0] == ">":
+                annotation.append(templine)
+            else:
+                sequences.append(eachline)
     if sequences == []:
         print("There is no sequence that meets the requirements. Program Terminated.")
         sys.exit()
@@ -143,90 +115,98 @@ def getFea(bestn):
     return annotation
 
 
-def runSVM(pathPrefix):
+def runSVM(pathPrefix: Path):
     commands = []
-    if "linux" in sys.platform:
-        commands.append(
-            r"%slibsvm-3.22/svm-scale -r scale.rule optimalFea.txt > seq.scale"
-            % pathPrefix
-        )
-        commands.append(
-            r"%slibsvm-3.22/svm-predict -b 1 seq.scale predict.model res.txt >out.txt"
-            % pathPrefix
-        )
-    if "win" in sys.platform:
-        commands.append(
-            r"%ssvm-scale.exe -r scale.rule optimalFea.txt > seq.scale" % pathPrefix
-        )
-        commands.append(
-            r"%ssvm-predict.exe -b 1 seq.scale predict.model res.txt >out.txt"
-            % pathPrefix
-        )
+    commands.append(
+        f"{pathPrefix}/libsvm-3.22/svm-scale -r scale.rule optimalFea.txt > seq.scale"
+    )
+    commands.append(
+        f"{pathPrefix}/libsvm-3.22/svm-predict -b 1 seq.scale predict.model res.txt >out.txt"
+    )
 
     for eachCmd in commands:
         os.system(eachCmd)
 
 
-def generateResult(annotation, outfile):
+def generateResult(annotation: list, outfile: Path):
     outResult = "res.txt"
-    f = open(outResult, "r")
     countn = 0
-    g = open(outfile, "w")
-    g.write("***All slide window sequence number prediction probability***\n")
-    g.write("Number\tannotation\tPromoter\tPromoter probability\n")
-    g1 = open("../Promoter.txt", "w")
     countp = 0
-    for eachline in f:
-        temp = eachline.split(" ")
-        if temp[0] == "labels":
-            pass
-        else:
-            countn += 1
+    with (
+        open(outResult, "r") as f,
+        open(outfile, "w") as g,
+        open("../Promoter.txt", "w") as g1,
+    ):
+        g.write(
+            "***All slide window sequence number prediction probability***\n"
+            "Number\tannotation\tPromoter\tPromoter probability\n"
+        )
+        for eachline in f:
             temp = eachline.split(" ")
-            if temp[0] == "1":
-                countp += 1
-                g.write("%s\t%s\tYes\t%s\n" % (countn, annotation[countn - 1], temp[1]))
-                g1.write(
-                    "%s is predicted as Promoter. Its probability score of being a promoter is %s.\n"
-                    % (annotation[countn - 1], temp[1])
-                )
-            if temp[0] == "2":
-                g.write("%s\t%s\tNo\t%s\n" % (countn, annotation[countn - 1], temp[1]))
-    g.close()
-    f.close()
-    g1.close()
+            if temp[0] == "labels":
+                pass
+            else:
+                countn += 1
+                temp = eachline.split(" ")
+                if temp[0] == "1":
+                    countp += 1
+                    g.write(
+                        "%s\t%s\tYes\t%s\n" % (countn, annotation[countn - 1], temp[1])
+                    )
+                    g1.write(
+                        "%s is predicted as Promoter. Its probability score of being a promoter is %s.\n"
+                        % (annotation[countn - 1], temp[1])
+                    )
+                if temp[0] == "2":
+                    g.write(
+                        "%s\t%s\tNo\t%s\n" % (countn, annotation[countn - 1], temp[1])
+                    )
     return countp
 
 
-if __name__ == "__main__":
-    pathPrefix = os.getcwd() + os.path.sep
-    [species, seqfile] = obtainExternalParameters()
-    [pretypelength, modelType, bestn] = getmodelpara(species)
-    Typepath = pathPrefix + modelType + os.path.sep
+@click.command(
+    help="""
+Useful:
+    python PseKNC.py -s H -i inputFilename
+
+  parameter description:
+
+    -s: The species type for prediction. (required). "H" for H. sapiens, "D" for D. melanogaster, "C" for C. elegans, "B" for B. subtilis and "E" for E. coli, respectively.
+    -i: The input filename. (required)
+    """
+)
+@click.option("-s", "--species", type=str, help="species")
+@click.option("-i", "--seqfile", type=str, help="input filename")
+def main(species: str, seqfile: str):
+    pathPrefix = Path(__file__).parent
+    mp = getmodelpara(species)
+    Typepath = str(pathPrefix / mp.modelType)
     os.chdir(Typepath)
 
-    if not Typepath in sys.path:
+    if Typepath not in sys.path:
         sys.path.append(Typepath)
-    import pseKNC
-    import PCSF
 
-    slide(pathPrefix + seqfile, pretypelength)
+    slide(pathPrefix / seqfile, mp.pretypelength)
     print("Sliding Window Finished.")
-    annotation = getFea(bestn)
+    annotation = getFea(mp.bestn)
 
     runSVM(pathPrefix)
-    countp = generateResult(annotation, pathPrefix + "All_Result.txt")
-    filelist = [
+    countp = generateResult(annotation, pathPrefix / "All_Result.txt")
+    for each in [
         "pse&pcsfFea.txt",
         "pseFea.txt",
         "pcsfFea.txt",
         "optimalFea.txt",
         "seq.scale",
         "out.txt",
-    ]
-    for each in filelist:
+    ]:
         os.remove(each)
     print(
-        "Prediction Finished!\n***There are %s promoter in the query sequences.***\nFind All_Result.csv and Promoter.txt get the results."
-        % countp
+        f"Prediction Finished!\n"
+        f"***There are {countp} promoter in the query sequences.***\n"
+        f"Find All_Result.csv and Promoter.txt get the results."
     )
+
+
+if __name__ == "__main__":
+    main()
