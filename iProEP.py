@@ -1,10 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+ * @Date: 2023-09-10 17:42:30
+ * @Editors: Hong-Yan Lai et al.
+ * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
+ * @LastEditTime: 2023-09-12 15:05:31
+ * @FilePath: /iProEP_localtool/iProEP.py
+ * @Description:
+"""
 # coding=utf-8
 
-import sys
 import os
-from typing import NamedTuple
-import click
+import sys
 from pathlib import Path
+from typing import NamedTuple
+
+import click
+from Bio import SeqIO, SeqRecord
 
 
 class ModelPara(NamedTuple):
@@ -28,31 +39,21 @@ def getmodelpara(preType):
 
 
 def slide(seqfile: Path, pretypelength: int):
-    annotation = ""
-    seq = ""
-
-    with open(seqfile, "r") as f, open("slide_seq.fasta", "w") as g:
-        for eachline in f:
-            if eachline[0] == ">":
-                annotation = eachline.strip()
-            elif eachline.strip() != "":
-                seq = eachline.strip().upper()
-                if len(seq) < pretypelength:
-                    print(
-                        "The length of the %s is less than %s-bp, it has no biological meaning for promoter."
-                        % (annotation, pretypelength)
-                    )
-                    continue
-                for i in range(len(seq) - pretypelength + 1):
-                    g.write(
-                        "%s,site:%s-%s\n%s\n"
-                        % (
-                            annotation,
-                            i,
-                            pretypelength + i,
-                            seq[i : pretypelength + i],
-                        )
-                    )
+    for seq in (i.upper() for i in SeqIO.parse(seqfile, "fasta")):
+        if len(seq) < pretypelength:
+            print(
+                f"The length of the {seq.description} is less than {pretypelength}-bp, "
+                f"it has no biological meaning for promoter."
+            )
+            continue
+        for i in range(len(seq) - pretypelength + 1):
+            seq1 = SeqRecord.SeqRecord(
+                seq.seq[i : pretypelength + i],
+                id=seq.id,
+                description=seq.description.split(maxsplit=1)[1]
+                + f",site:{i}-{pretypelength + i}",
+            )
+            yield seq1
 
 
 def merge2svmfile(newsvmfile, svmfile1, svmfile2):
@@ -91,8 +92,8 @@ def getOptimalFea(mrmrOrderFile, allFeaFile, feaNum, optimalFeaFile):
 
 
 def getFea(bestn):
-    import pseKNC
     import PCSF
+    import pseKNC
 
     annotation = []
     sequences = []
@@ -192,7 +193,9 @@ def main(species: str, seqfile: str, debug: bool):
     if Typepath not in sys.path:
         sys.path.append(Typepath)
 
-    slide(pathPrefix / seqfile, mp.pretypelength)
+    SeqIO.write(
+        slide(pathPrefix / seqfile, mp.pretypelength), "slide_seq.fasta", "fasta-2line"
+    )
     print("Sliding Window Finished.")
     annotation = getFea(mp.bestn)
 
