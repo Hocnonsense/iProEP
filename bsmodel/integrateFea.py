@@ -10,9 +10,9 @@ import os
 import sys
 
 def merge2svmfile(newsvmfile,svmfile1,svmfile2):
-	fobjr1 = open('.\\5model\\bsmodel\\'+svmfile1,'r')
-	fobjr2 = open('.\\5model\\bsmodel\\'+svmfile2,'r')
-	fobjw = open('.\\5model\\bsmodel\\'+newsvmfile,'w')
+	fobjr1 = open(svmfile1,'r')
+	fobjr2 = open(svmfile2,'r')
+	fobjw = open(newsvmfile,'w')
 	for eachline1 in fobjr1:
 		eachline1= eachline1.strip()
 		eachline2 = fobjr2.readline().strip()
@@ -21,16 +21,16 @@ def merge2svmfile(newsvmfile,svmfile1,svmfile2):
 	fobjw.close()
 	fobjr1.close()
 	fobjr2.close()
-    
+
 def getOptimalFea(mrmrOrderFile,allFeaFile,feaNum,optimalFeaFile):
-    orderFile = open('.\\5model\\bsmodel\\'+mrmrOrderFile,'r')
+    orderFile = open(mrmrOrderFile,'r')
     order = []
     for eachline in orderFile:
-            order.append(eachline.strip().split('\t')[1])       
+            order.append(eachline.strip().split('\t')[1])
     orderFile.close()
-    
-    fobjr = open('.\\5model\\bsmodel\\'+allFeaFile,'r')
-    fobjw = open('.\\5model\\bsmodel\\'+optimalFeaFile,'w')
+
+    fobjr = open(allFeaFile,'r')
+    fobjw = open(optimalFeaFile,'w')
     for eachline in fobjr:
         eachline = eachline.strip().split('\t')
         fobjw.write(eachline[0] + '\t')
@@ -38,7 +38,7 @@ def getOptimalFea(mrmrOrderFile,allFeaFile,feaNum,optimalFeaFile):
             index = int(order[k])
             content = "%d:%s\t" % (k+1,eachline[index].split(':')[1])
             fobjw.write(content)
-        fobjw.write('\n')        
+        fobjw.write('\n')
     fobjw.close()
     fobjr.close()
 
@@ -57,16 +57,16 @@ if __name__ == '__main__':
                 pass
         else:
                sequences.append(eachline)
-               
+
     inputFile.close()
 
 
     ##指定输入输出文件名
     inputFilename = os.path.basename(sys.argv[1])
     outputFilename = os.path.basename(sys.argv[2])
-    
+
 
     pseKNC.pseKNC(sequences, 'pseFea_'+inputFilename)
     PCSF.getPCSF(sequences, 'pcsfFea_'+inputFilename)
     merge2svmfile('pse&pcsfFea_'+inputFilename,'pseFea_'+inputFilename,'pcsfFea_'+inputFilename)
-    getOptimalFea('345ResultMRMR.txt','pse&pcsfFea_'+inputFilename,55,'optimalFea_'+outputFilename) 
+    getOptimalFea('345ResultMRMR.txt','pse&pcsfFea_'+inputFilename,55,'optimalFea_'+outputFilename)

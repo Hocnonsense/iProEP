@@ -3,7 +3,7 @@
  * @Date: 2023-09-10 17:42:30
  * @Editors: Hong-Yan Lai et al.
  * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
- * @LastEditTime: 2023-09-12 17:11:13
+ * @LastEditTime: 2023-09-12 17:45:36
  * @FilePath: /iProEP_localtool/iProEP.py
  * @Description:
 """
@@ -26,15 +26,15 @@ class ModelPara(NamedTuple):
 
 def getmodelpara(preType):
     if preType == "H":
-        return ModelPara(300, "hsmodel", 55)
+        return ModelPara(300, "hsmodel", 410)
     if preType == "D":
         return ModelPara(300, "dmmodel", 893)
     if preType == "C":
         return ModelPara(300, "cemodel", 67)
     if preType == "B":
-        return ModelPara(81, "bsmodel", 82)
+        return ModelPara(81, "bsmodel", 55)
     if preType == "E":
-        return ModelPara(81, "ecmodel", 410)
+        return ModelPara(81, "ecmodel", 82)
     raise KeyError("Unsupported Type Name")
 
 
@@ -132,17 +132,13 @@ def generateResult(annotation: list, outfile: Path, outseq: Path):
             temp = eachline.split(" ")
             if temp[0] == "1":
                 countp += 1
-                g.write(
-                    "%s\t%s\tYes\t%s\n" % (countn, annotation[countn - 1], temp[1])
-                )
+                g.write("%s\t%s\tYes\t%s\n" % (countn, annotation[countn - 1], temp[1]))
                 g1.write(
                     "%s is predicted as Promoter. Its probability score of being a promoter is %s.\n"
                     % (annotation[countn - 1], temp[1])
                 )
             if temp[0] == "2":
-                g.write(
-                    "%s\t%s\tNo\t%s\n" % (countn, annotation[countn - 1], temp[1])
-                )
+                g.write("%s\t%s\tNo\t%s\n" % (countn, annotation[countn - 1], temp[1]))
     return countp
 
 

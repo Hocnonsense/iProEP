@@ -1,246 +1,353 @@
-CRE18453 upstream (2000bp),site:37-337 is predicted as Promoter. Its probability score of being a promoter is 0.78575.
-CRE18453 upstream (2000bp),site:38-338 is predicted as Promoter. Its probability score of being a promoter is 0.776869.
-CRE18453 upstream (2000bp),site:39-339 is predicted as Promoter. Its probability score of being a promoter is 0.85017.
-CRE18453 upstream (2000bp),site:42-342 is predicted as Promoter. Its probability score of being a promoter is 0.947889.
-CRE18453 upstream (2000bp),site:43-343 is predicted as Promoter. Its probability score of being a promoter is 0.996345.
-CRE18453 upstream (2000bp),site:44-344 is predicted as Promoter. Its probability score of being a promoter is 0.955959.
-CRE18453 upstream (2000bp),site:71-371 is predicted as Promoter. Its probability score of being a promoter is 0.520558.
-CRE18453 upstream (2000bp),site:72-372 is predicted as Promoter. Its probability score of being a promoter is 0.943639.
-CRE18453 upstream (2000bp),site:73-373 is predicted as Promoter. Its probability score of being a promoter is 0.555442.
-CRE18453 upstream (2000bp),site:77-377 is predicted as Promoter. Its probability score of being a promoter is 0.836243.
-CRE18453 upstream (2000bp),site:78-378 is predicted as Promoter. Its probability score of being a promoter is 0.938225.
-CRE18453 upstream (2000bp),site:79-379 is predicted as Promoter. Its probability score of being a promoter is 0.619642.
-CRE18453 upstream (2000bp),site:81-381 is predicted as Promoter. Its probability score of being a promoter is 0.62134.
-CRE18453 upstream (2000bp),site:83-383 is predicted as Promoter. Its probability score of being a promoter is 0.853442.
-CRE18453 upstream (2000bp),site:85-385 is predicted as Promoter. Its probability score of being a promoter is 0.711984.
-CRE18453 upstream (2000bp),site:86-386 is predicted as Promoter. Its probability score of being a promoter is 0.956345.
-CRE18453 upstream (2000bp),site:87-387 is predicted as Promoter. Its probability score of being a promoter is 0.9691.
-CRE18453 upstream (2000bp),site:90-390 is predicted as Promoter. Its probability score of being a promoter is 0.531164.
-CRE18453 upstream (2000bp),site:107-407 is predicted as Promoter. Its probability score of being a promoter is 0.947456.
-CRE18453 upstream (2000bp),site:108-408 is predicted as Promoter. Its probability score of being a promoter is 0.722087.
-CRE18453 upstream (2000bp),site:109-409 is predicted as Promoter. Its probability score of being a promoter is 0.866507.
-CRE18453 upstream (2000bp),site:110-410 is predicted as Promoter. Its probability score of being a promoter is 0.509255.
-CRE18453 upstream (2000bp),site:115-415 is predicted as Promoter. Its probability score of being a promoter is 0.511962.
-CRE18453 upstream (2000bp),site:116-416 is predicted as Promoter. Its probability score of being a promoter is 0.659312.
-CRE18453 upstream (2000bp),site:117-417 is predicted as Promoter. Its probability score of being a promoter is 0.995575.
-CRE18453 upstream (2000bp),site:118-418 is predicted as Promoter. Its probability score of being a promoter is 0.905867.
-CRE18453 upstream (2000bp),site:126-426 is predicted as Promoter. Its probability score of being a promoter is 0.689759.
-CRE18453 upstream (2000bp),site:129-429 is predicted as Promoter. Its probability score of being a promoter is 0.720912.
-CRE18453 upstream (2000bp),site:132-432 is predicted as Promoter. Its probability score of being a promoter is 0.719319.
-CRE18453 upstream (2000bp),site:133-433 is predicted as Promoter. Its probability score of being a promoter is 0.637908.
-CRE18453 upstream (2000bp),site:139-439 is predicted as Promoter. Its probability score of being a promoter is 0.587913.
-CRE18453 upstream (2000bp),site:142-442 is predicted as Promoter. Its probability score of being a promoter is 0.916102.
-CRE18453 upstream (2000bp),site:143-443 is predicted as Promoter. Its probability score of being a promoter is 0.928219.
-CRE18453 upstream (2000bp),site:144-444 is predicted as Promoter. Its probability score of being a promoter is 0.514845.
-CRE18453 upstream (2000bp),site:149-449 is predicted as Promoter. Its probability score of being a promoter is 0.583267.
-CRE18453 upstream (2000bp),site:150-450 is predicted as Promoter. Its probability score of being a promoter is 0.690836.
-CRE18453 upstream (2000bp),site:151-451 is predicted as Promoter. Its probability score of being a promoter is 0.580771.
-CRE18453 upstream (2000bp),site:159-459 is predicted as Promoter. Its probability score of being a promoter is 0.964034.
-CRE18453 upstream (2000bp),site:160-460 is predicted as Promoter. Its probability score of being a promoter is 0.999243.
-CRE18453 upstream (2000bp),site:161-461 is predicted as Promoter. Its probability score of being a promoter is 0.997859.
-CRE18453 upstream (2000bp),site:162-462 is predicted as Promoter. Its probability score of being a promoter is 0.935013.
-CRE18453 upstream (2000bp),site:163-463 is predicted as Promoter. Its probability score of being a promoter is 0.643735.
-CRE18453 upstream (2000bp),site:172-472 is predicted as Promoter. Its probability score of being a promoter is 0.527207.
-CRE18453 upstream (2000bp),site:182-482 is predicted as Promoter. Its probability score of being a promoter is 0.77684.
-CRE18453 upstream (2000bp),site:199-499 is predicted as Promoter. Its probability score of being a promoter is 0.830979.
-CRE18453 upstream (2000bp),site:200-500 is predicted as Promoter. Its probability score of being a promoter is 0.959071.
-CRE18453 upstream (2000bp),site:213-513 is predicted as Promoter. Its probability score of being a promoter is 0.569741.
-CRE18453 upstream (2000bp),site:235-535 is predicted as Promoter. Its probability score of being a promoter is 0.768438.
-CRE18453 upstream (2000bp),site:250-550 is predicted as Promoter. Its probability score of being a promoter is 0.552535.
-CRE18453 upstream (2000bp),site:294-594 is predicted as Promoter. Its probability score of being a promoter is 0.632993.
-CRE18453 upstream (2000bp),site:295-595 is predicted as Promoter. Its probability score of being a promoter is 0.533107.
-CRE18453 upstream (2000bp),site:316-616 is predicted as Promoter. Its probability score of being a promoter is 0.769295.
-CRE18453 upstream (2000bp),site:407-707 is predicted as Promoter. Its probability score of being a promoter is 0.563696.
-CRE18453 upstream (2000bp),site:410-710 is predicted as Promoter. Its probability score of being a promoter is 0.838863.
-CRE18453 upstream (2000bp),site:434-734 is predicted as Promoter. Its probability score of being a promoter is 0.81463.
-CRE18453 upstream (2000bp),site:445-745 is predicted as Promoter. Its probability score of being a promoter is 0.819059.
-CRE18453 upstream (2000bp),site:446-746 is predicted as Promoter. Its probability score of being a promoter is 0.935956.
-CRE18453 upstream (2000bp),site:447-747 is predicted as Promoter. Its probability score of being a promoter is 0.965461.
-CRE18453 upstream (2000bp),site:448-748 is predicted as Promoter. Its probability score of being a promoter is 0.656201.
-CRE18453 upstream (2000bp),site:516-816 is predicted as Promoter. Its probability score of being a promoter is 0.829445.
-CRE18453 upstream (2000bp),site:523-823 is predicted as Promoter. Its probability score of being a promoter is 0.691159.
-CRE18453 upstream (2000bp),site:524-824 is predicted as Promoter. Its probability score of being a promoter is 0.673642.
-CRE18453 upstream (2000bp),site:553-853 is predicted as Promoter. Its probability score of being a promoter is 0.792545.
-CRE18453 upstream (2000bp),site:556-856 is predicted as Promoter. Its probability score of being a promoter is 0.655935.
-CRE18453 upstream (2000bp),site:563-863 is predicted as Promoter. Its probability score of being a promoter is 0.704237.
-CRE18453 upstream (2000bp),site:564-864 is predicted as Promoter. Its probability score of being a promoter is 0.66147.
-CRE18453 upstream (2000bp),site:567-867 is predicted as Promoter. Its probability score of being a promoter is 0.515038.
-CRE18453 upstream (2000bp),site:575-875 is predicted as Promoter. Its probability score of being a promoter is 0.652901.
-CRE18453 upstream (2000bp),site:576-876 is predicted as Promoter. Its probability score of being a promoter is 0.578318.
-CRE18453 upstream (2000bp),site:578-878 is predicted as Promoter. Its probability score of being a promoter is 0.969427.
-CRE18453 upstream (2000bp),site:590-890 is predicted as Promoter. Its probability score of being a promoter is 0.51588.
-CRE18453 upstream (2000bp),site:592-892 is predicted as Promoter. Its probability score of being a promoter is 0.93991.
-CRE18453 upstream (2000bp),site:593-893 is predicted as Promoter. Its probability score of being a promoter is 0.501827.
-CRE18453 upstream (2000bp),site:595-895 is predicted as Promoter. Its probability score of being a promoter is 0.813106.
-CRE18453 upstream (2000bp),site:597-897 is predicted as Promoter. Its probability score of being a promoter is 0.614392.
-CRE18453 upstream (2000bp),site:598-898 is predicted as Promoter. Its probability score of being a promoter is 0.533535.
-CRE18453 upstream (2000bp),site:599-899 is predicted as Promoter. Its probability score of being a promoter is 0.564427.
-CRE18453 upstream (2000bp),site:613-913 is predicted as Promoter. Its probability score of being a promoter is 0.909373.
-CRE18453 upstream (2000bp),site:615-915 is predicted as Promoter. Its probability score of being a promoter is 0.558986.
-CRE18453 upstream (2000bp),site:624-924 is predicted as Promoter. Its probability score of being a promoter is 0.885765.
-CRE18453 upstream (2000bp),site:643-943 is predicted as Promoter. Its probability score of being a promoter is 0.762688.
-CRE18453 upstream (2000bp),site:649-949 is predicted as Promoter. Its probability score of being a promoter is 0.785383.
-CRE18453 upstream (2000bp),site:650-950 is predicted as Promoter. Its probability score of being a promoter is 0.639489.
-CRE18453 upstream (2000bp),site:664-964 is predicted as Promoter. Its probability score of being a promoter is 0.703879.
-CRE18453 upstream (2000bp),site:680-980 is predicted as Promoter. Its probability score of being a promoter is 0.89746.
-CRE18453 upstream (2000bp),site:681-981 is predicted as Promoter. Its probability score of being a promoter is 0.856781.
-CRE18453 upstream (2000bp),site:687-987 is predicted as Promoter. Its probability score of being a promoter is 0.917589.
-CRE18453 upstream (2000bp),site:688-988 is predicted as Promoter. Its probability score of being a promoter is 0.939847.
-CRE18453 upstream (2000bp),site:689-989 is predicted as Promoter. Its probability score of being a promoter is 0.55145.
-CRE18453 upstream (2000bp),site:690-990 is predicted as Promoter. Its probability score of being a promoter is 0.837437.
-CRE18453 upstream (2000bp),site:699-999 is predicted as Promoter. Its probability score of being a promoter is 0.641343.
-CRE18453 upstream (2000bp),site:700-1000 is predicted as Promoter. Its probability score of being a promoter is 0.814859.
-CRE18453 upstream (2000bp),site:701-1001 is predicted as Promoter. Its probability score of being a promoter is 0.690768.
-CRE18453 upstream (2000bp),site:702-1002 is predicted as Promoter. Its probability score of being a promoter is 0.559569.
-CRE18453 upstream (2000bp),site:735-1035 is predicted as Promoter. Its probability score of being a promoter is 0.657217.
-CRE18453 upstream (2000bp),site:773-1073 is predicted as Promoter. Its probability score of being a promoter is 0.714687.
-CRE18453 upstream (2000bp),site:774-1074 is predicted as Promoter. Its probability score of being a promoter is 0.722091.
-CRE18453 upstream (2000bp),site:779-1079 is predicted as Promoter. Its probability score of being a promoter is 0.770277.
-CRE18453 upstream (2000bp),site:780-1080 is predicted as Promoter. Its probability score of being a promoter is 0.86352.
-CRE18453 upstream (2000bp),site:841-1141 is predicted as Promoter. Its probability score of being a promoter is 0.58259.
-CRE18453 upstream (2000bp),site:853-1153 is predicted as Promoter. Its probability score of being a promoter is 0.872678.
-CRE18453 upstream (2000bp),site:873-1173 is predicted as Promoter. Its probability score of being a promoter is 0.567301.
-CRE18453 upstream (2000bp),site:919-1219 is predicted as Promoter. Its probability score of being a promoter is 0.512852.
-CRE18453 upstream (2000bp),site:920-1220 is predicted as Promoter. Its probability score of being a promoter is 0.90295.
-CRE18453 upstream (2000bp),site:949-1249 is predicted as Promoter. Its probability score of being a promoter is 0.609924.
-CRE18453 upstream (2000bp),site:950-1250 is predicted as Promoter. Its probability score of being a promoter is 0.931561.
-CRE18453 upstream (2000bp),site:951-1251 is predicted as Promoter. Its probability score of being a promoter is 0.753786.
-CRE18453 upstream (2000bp),site:958-1258 is predicted as Promoter. Its probability score of being a promoter is 0.727393.
-CRE18453 upstream (2000bp),site:967-1267 is predicted as Promoter. Its probability score of being a promoter is 0.518916.
-CRE18453 upstream (2000bp),site:1005-1305 is predicted as Promoter. Its probability score of being a promoter is 0.563582.
-CRE18453 upstream (2000bp),site:1007-1307 is predicted as Promoter. Its probability score of being a promoter is 0.767363.
-CRE18453 upstream (2000bp),site:1017-1317 is predicted as Promoter. Its probability score of being a promoter is 0.507312.
-CRE18453 upstream (2000bp),site:1018-1318 is predicted as Promoter. Its probability score of being a promoter is 0.570485.
-CRE18453 upstream (2000bp),site:1042-1342 is predicted as Promoter. Its probability score of being a promoter is 0.548105.
-CRE18453 upstream (2000bp),site:1043-1343 is predicted as Promoter. Its probability score of being a promoter is 0.513426.
-CRE18453 upstream (2000bp),site:1044-1344 is predicted as Promoter. Its probability score of being a promoter is 0.838635.
-CRE18453 upstream (2000bp),site:1045-1345 is predicted as Promoter. Its probability score of being a promoter is 0.640406.
-CRE18453 upstream (2000bp),site:1050-1350 is predicted as Promoter. Its probability score of being a promoter is 0.731943.
-CRE18453 upstream (2000bp),site:1051-1351 is predicted as Promoter. Its probability score of being a promoter is 0.725802.
-CRE18453 upstream (2000bp),site:1052-1352 is predicted as Promoter. Its probability score of being a promoter is 0.526975.
-CRE18453 upstream (2000bp),site:1114-1414 is predicted as Promoter. Its probability score of being a promoter is 0.552613.
-CRE18453 upstream (2000bp),site:1128-1428 is predicted as Promoter. Its probability score of being a promoter is 0.646412.
-CRE18453 upstream (2000bp),site:1158-1458 is predicted as Promoter. Its probability score of being a promoter is 0.983344.
-CRE18453 upstream (2000bp),site:1159-1459 is predicted as Promoter. Its probability score of being a promoter is 0.989641.
-CRE18453 upstream (2000bp),site:1160-1460 is predicted as Promoter. Its probability score of being a promoter is 0.632839.
-CRE18453 upstream (2000bp),site:1203-1503 is predicted as Promoter. Its probability score of being a promoter is 0.635077.
-CRE18453 upstream (2000bp),site:1204-1504 is predicted as Promoter. Its probability score of being a promoter is 0.972077.
-CRE18453 upstream (2000bp),site:1205-1505 is predicted as Promoter. Its probability score of being a promoter is 0.865681.
-CRE18453 upstream (2000bp),site:1214-1514 is predicted as Promoter. Its probability score of being a promoter is 0.980477.
-CRE18453 upstream (2000bp),site:1215-1515 is predicted as Promoter. Its probability score of being a promoter is 0.93248.
-CRE18453 upstream (2000bp),site:1216-1516 is predicted as Promoter. Its probability score of being a promoter is 0.51244.
-CRE18453 upstream (2000bp),site:1221-1521 is predicted as Promoter. Its probability score of being a promoter is 0.867928.
-CRE18453 upstream (2000bp),site:1222-1522 is predicted as Promoter. Its probability score of being a promoter is 0.723573.
-CRE18453 upstream (2000bp),site:1223-1523 is predicted as Promoter. Its probability score of being a promoter is 0.760285.
-CRE18453 upstream (2000bp),site:1302-1602 is predicted as Promoter. Its probability score of being a promoter is 0.898069.
-CRE18453 upstream (2000bp),site:1328-1628 is predicted as Promoter. Its probability score of being a promoter is 0.858373.
-CRE18453 upstream (2000bp),site:1331-1631 is predicted as Promoter. Its probability score of being a promoter is 0.654026.
-CRE18453 upstream (2000bp),site:1365-1665 is predicted as Promoter. Its probability score of being a promoter is 0.984383.
-CRE18453 upstream (2000bp),site:1366-1666 is predicted as Promoter. Its probability score of being a promoter is 0.663391.
-CRE18453 upstream (2000bp),site:1367-1667 is predicted as Promoter. Its probability score of being a promoter is 0.862429.
-CRE18453 upstream (2000bp),site:1368-1668 is predicted as Promoter. Its probability score of being a promoter is 0.731909.
-CRE18453 upstream (2000bp),site:1387-1687 is predicted as Promoter. Its probability score of being a promoter is 0.966981.
-CRE18453 upstream (2000bp),site:1388-1688 is predicted as Promoter. Its probability score of being a promoter is 0.869178.
-CRE18453 upstream (2000bp),site:1391-1691 is predicted as Promoter. Its probability score of being a promoter is 0.615797.
-CRE18453 upstream (2000bp),site:1392-1692 is predicted as Promoter. Its probability score of being a promoter is 0.845141.
-CRE18453 upstream (2000bp),site:1393-1693 is predicted as Promoter. Its probability score of being a promoter is 0.876554.
-CRE18453 upstream (2000bp),site:1394-1694 is predicted as Promoter. Its probability score of being a promoter is 0.668526.
-CRE18453 upstream (2000bp),site:1395-1695 is predicted as Promoter. Its probability score of being a promoter is 0.846989.
-CRE18453 upstream (2000bp),site:1396-1696 is predicted as Promoter. Its probability score of being a promoter is 0.505494.
-CRE18453 upstream (2000bp),site:1400-1700 is predicted as Promoter. Its probability score of being a promoter is 0.702006.
-CRE18453 upstream (2000bp),site:1417-1717 is predicted as Promoter. Its probability score of being a promoter is 0.956923.
-CRE18453 upstream (2000bp),site:1418-1718 is predicted as Promoter. Its probability score of being a promoter is 0.678544.
-CRE18453 upstream (2000bp),site:1424-1724 is predicted as Promoter. Its probability score of being a promoter is 0.662994.
-CRE18453 upstream (2000bp),site:1425-1725 is predicted as Promoter. Its probability score of being a promoter is 0.943472.
-CRE18453 upstream (2000bp),site:1426-1726 is predicted as Promoter. Its probability score of being a promoter is 0.741486.
-CRE18453 upstream (2000bp),site:1433-1733 is predicted as Promoter. Its probability score of being a promoter is 0.861416.
-CRE18453 upstream (2000bp),site:1441-1741 is predicted as Promoter. Its probability score of being a promoter is 0.683053.
-CRE18453 upstream (2000bp),site:1442-1742 is predicted as Promoter. Its probability score of being a promoter is 0.865003.
-CRE18453 upstream (2000bp),site:1443-1743 is predicted as Promoter. Its probability score of being a promoter is 0.761272.
-CRE18453 upstream (2000bp),site:1452-1752 is predicted as Promoter. Its probability score of being a promoter is 0.527491.
-CRE18453 upstream (2000bp),site:1454-1754 is predicted as Promoter. Its probability score of being a promoter is 0.759933.
-CRE18453 upstream (2000bp),site:1456-1756 is predicted as Promoter. Its probability score of being a promoter is 0.862136.
-CRE18453 upstream (2000bp),site:1457-1757 is predicted as Promoter. Its probability score of being a promoter is 0.764353.
-CRE18453 upstream (2000bp),site:1463-1763 is predicted as Promoter. Its probability score of being a promoter is 0.520303.
-CRE18453 upstream (2000bp),site:1465-1765 is predicted as Promoter. Its probability score of being a promoter is 0.507991.
-CRE18453 upstream (2000bp),site:1466-1766 is predicted as Promoter. Its probability score of being a promoter is 0.616681.
-CRE18453 upstream (2000bp),site:1469-1769 is predicted as Promoter. Its probability score of being a promoter is 0.713265.
-CRE18453 upstream (2000bp),site:1472-1772 is predicted as Promoter. Its probability score of being a promoter is 0.658696.
-CRE18453 upstream (2000bp),site:1473-1773 is predicted as Promoter. Its probability score of being a promoter is 0.831924.
-CRE18453 upstream (2000bp),site:1474-1774 is predicted as Promoter. Its probability score of being a promoter is 0.836581.
-CRE18453 upstream (2000bp),site:1477-1777 is predicted as Promoter. Its probability score of being a promoter is 0.884416.
-CRE18453 upstream (2000bp),site:1478-1778 is predicted as Promoter. Its probability score of being a promoter is 0.976162.
-CRE18453 upstream (2000bp),site:1479-1779 is predicted as Promoter. Its probability score of being a promoter is 0.946845.
-CRE18453 upstream (2000bp),site:1481-1781 is predicted as Promoter. Its probability score of being a promoter is 0.617122.
-CRE18453 upstream (2000bp),site:1482-1782 is predicted as Promoter. Its probability score of being a promoter is 0.586634.
-CRE18453 upstream (2000bp),site:1485-1785 is predicted as Promoter. Its probability score of being a promoter is 0.58411.
-CRE18453 upstream (2000bp),site:1489-1789 is predicted as Promoter. Its probability score of being a promoter is 0.528983.
-CRE18453 upstream (2000bp),site:1491-1791 is predicted as Promoter. Its probability score of being a promoter is 0.504438.
-CRE18453 upstream (2000bp),site:1497-1797 is predicted as Promoter. Its probability score of being a promoter is 0.975519.
-CRE18453 upstream (2000bp),site:1498-1798 is predicted as Promoter. Its probability score of being a promoter is 0.670537.
-CRE18453 upstream (2000bp),site:1499-1799 is predicted as Promoter. Its probability score of being a promoter is 0.789096.
-CRE18453 upstream (2000bp),site:1503-1803 is predicted as Promoter. Its probability score of being a promoter is 0.583177.
-CRE18453 upstream (2000bp),site:1504-1804 is predicted as Promoter. Its probability score of being a promoter is 0.794373.
-CRE18453 upstream (2000bp),site:1505-1805 is predicted as Promoter. Its probability score of being a promoter is 0.998197.
-CRE18453 upstream (2000bp),site:1506-1806 is predicted as Promoter. Its probability score of being a promoter is 0.992736.
-CRE18453 upstream (2000bp),site:1507-1807 is predicted as Promoter. Its probability score of being a promoter is 0.847174.
-CRE18453 upstream (2000bp),site:1513-1813 is predicted as Promoter. Its probability score of being a promoter is 0.629366.
-CRE18453 upstream (2000bp),site:1514-1814 is predicted as Promoter. Its probability score of being a promoter is 0.50703.
-CRE18453 upstream (2000bp),site:1515-1815 is predicted as Promoter. Its probability score of being a promoter is 0.947673.
-CRE18453 upstream (2000bp),site:1516-1816 is predicted as Promoter. Its probability score of being a promoter is 0.592006.
-CRE18453 upstream (2000bp),site:1522-1822 is predicted as Promoter. Its probability score of being a promoter is 0.600197.
-CRE18453 upstream (2000bp),site:1525-1825 is predicted as Promoter. Its probability score of being a promoter is 0.911863.
-CRE18453 upstream (2000bp),site:1526-1826 is predicted as Promoter. Its probability score of being a promoter is 0.73049.
-CRE18453 upstream (2000bp),site:1532-1832 is predicted as Promoter. Its probability score of being a promoter is 0.81303.
-CRE18453 upstream (2000bp),site:1533-1833 is predicted as Promoter. Its probability score of being a promoter is 0.64773.
-CRE18453 upstream (2000bp),site:1534-1834 is predicted as Promoter. Its probability score of being a promoter is 0.550802.
-CRE18453 upstream (2000bp),site:1547-1847 is predicted as Promoter. Its probability score of being a promoter is 0.691764.
-CRE18453 upstream (2000bp),site:1548-1848 is predicted as Promoter. Its probability score of being a promoter is 0.58428.
-CRE18453 upstream (2000bp),site:1550-1850 is predicted as Promoter. Its probability score of being a promoter is 0.517831.
-CRE18453 upstream (2000bp),site:1553-1853 is predicted as Promoter. Its probability score of being a promoter is 0.721903.
-CRE18453 upstream (2000bp),site:1557-1857 is predicted as Promoter. Its probability score of being a promoter is 0.727874.
-CRE18453 upstream (2000bp),site:1560-1860 is predicted as Promoter. Its probability score of being a promoter is 0.626197.
-CRE18453 upstream (2000bp),site:1561-1861 is predicted as Promoter. Its probability score of being a promoter is 0.85343.
-CRE18453 upstream (2000bp),site:1562-1862 is predicted as Promoter. Its probability score of being a promoter is 0.795107.
-CRE18453 upstream (2000bp),site:1567-1867 is predicted as Promoter. Its probability score of being a promoter is 0.635749.
-CRE18453 upstream (2000bp),site:1571-1871 is predicted as Promoter. Its probability score of being a promoter is 0.575126.
-CRE18453 upstream (2000bp),site:1572-1872 is predicted as Promoter. Its probability score of being a promoter is 0.63763.
-CRE18453 upstream (2000bp),site:1573-1873 is predicted as Promoter. Its probability score of being a promoter is 0.765525.
-CRE18453 upstream (2000bp),site:1574-1874 is predicted as Promoter. Its probability score of being a promoter is 0.871712.
-CRE18453 upstream (2000bp),site:1575-1875 is predicted as Promoter. Its probability score of being a promoter is 0.996812.
-CRE18453 upstream (2000bp),site:1576-1876 is predicted as Promoter. Its probability score of being a promoter is 0.989296.
-CRE18453 upstream (2000bp),site:1577-1877 is predicted as Promoter. Its probability score of being a promoter is 0.955937.
-CRE18453 upstream (2000bp),site:1578-1878 is predicted as Promoter. Its probability score of being a promoter is 0.817232.
-CRE18453 upstream (2000bp),site:1587-1887 is predicted as Promoter. Its probability score of being a promoter is 0.818953.
-CRE18453 upstream (2000bp),site:1588-1888 is predicted as Promoter. Its probability score of being a promoter is 0.769144.
-CRE18453 upstream (2000bp),site:1589-1889 is predicted as Promoter. Its probability score of being a promoter is 0.647696.
-CRE18453 upstream (2000bp),site:1596-1896 is predicted as Promoter. Its probability score of being a promoter is 0.558639.
-CRE18453 upstream (2000bp),site:1597-1897 is predicted as Promoter. Its probability score of being a promoter is 0.552485.
-CRE18453 upstream (2000bp),site:1601-1901 is predicted as Promoter. Its probability score of being a promoter is 0.798538.
-CRE18453 upstream (2000bp),site:1602-1902 is predicted as Promoter. Its probability score of being a promoter is 0.548115.
-CRE18453 upstream (2000bp),site:1603-1903 is predicted as Promoter. Its probability score of being a promoter is 0.551309.
-CRE18453 upstream (2000bp),site:1605-1905 is predicted as Promoter. Its probability score of being a promoter is 0.711556.
-CRE18453 upstream (2000bp),site:1637-1937 is predicted as Promoter. Its probability score of being a promoter is 0.872371.
-CRE18453 upstream (2000bp),site:1638-1938 is predicted as Promoter. Its probability score of being a promoter is 0.954927.
-CRE18453 upstream (2000bp),site:1639-1939 is predicted as Promoter. Its probability score of being a promoter is 0.890102.
-CRE18453 upstream (2000bp),site:1644-1944 is predicted as Promoter. Its probability score of being a promoter is 0.512806.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:84-384 is predicted as Promoter. Its probability score of being a promoter is 0.505994.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:206-506 is predicted as Promoter. Its probability score of being a promoter is 0.689836.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:211-511 is predicted as Promoter. Its probability score of being a promoter is 0.525305.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:214-514 is predicted as Promoter. Its probability score of being a promoter is 0.969915.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:215-515 is predicted as Promoter. Its probability score of being a promoter is 0.983919.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:216-516 is predicted as Promoter. Its probability score of being a promoter is 0.91009.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:226-526 is predicted as Promoter. Its probability score of being a promoter is 0.525181.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:243-543 is predicted as Promoter. Its probability score of being a promoter is 0.586749.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:251-551 is predicted as Promoter. Its probability score of being a promoter is 0.515302.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:292-592 is predicted as Promoter. Its probability score of being a promoter is 0.525633.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:319-619 is predicted as Promoter. Its probability score of being a promoter is 0.897675.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:320-620 is predicted as Promoter. Its probability score of being a promoter is 0.744965.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:329-629 is predicted as Promoter. Its probability score of being a promoter is 0.711823.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:341-641 is predicted as Promoter. Its probability score of being a promoter is 0.958112.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:342-642 is predicted as Promoter. Its probability score of being a promoter is 0.573848.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:356-656 is predicted as Promoter. Its probability score of being a promoter is 0.908331.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:358-658 is predicted as Promoter. Its probability score of being a promoter is 0.597168.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:370-670 is predicted as Promoter. Its probability score of being a promoter is 0.81745.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:400-700 is predicted as Promoter. Its probability score of being a promoter is 0.928891.
-CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:401-701 is predicted as Promoter. Its probability score of being a promoter is 0.941838.
+CRE18453 upstream (2000bp),site:1-82 is predicted as Promoter. Its probability score of being a promoter is 0.527088.
+CRE18453 upstream (2000bp),site:2-83 is predicted as Promoter. Its probability score of being a promoter is 0.902435.
+CRE18453 upstream (2000bp),site:3-84 is predicted as Promoter. Its probability score of being a promoter is 0.936854.
+CRE18453 upstream (2000bp),site:8-89 is predicted as Promoter. Its probability score of being a promoter is 0.867285.
+CRE18453 upstream (2000bp),site:16-97 is predicted as Promoter. Its probability score of being a promoter is 0.883181.
+CRE18453 upstream (2000bp),site:21-102 is predicted as Promoter. Its probability score of being a promoter is 0.731629.
+CRE18453 upstream (2000bp),site:22-103 is predicted as Promoter. Its probability score of being a promoter is 0.866289.
+CRE18453 upstream (2000bp),site:24-105 is predicted as Promoter. Its probability score of being a promoter is 0.685985.
+CRE18453 upstream (2000bp),site:66-147 is predicted as Promoter. Its probability score of being a promoter is 0.615437.
+CRE18453 upstream (2000bp),site:134-215 is predicted as Promoter. Its probability score of being a promoter is 0.54912.
+CRE18453 upstream (2000bp),site:146-227 is predicted as Promoter. Its probability score of being a promoter is 0.800257.
+CRE18453 upstream (2000bp),site:149-230 is predicted as Promoter. Its probability score of being a promoter is 0.858266.
+CRE18453 upstream (2000bp),site:150-231 is predicted as Promoter. Its probability score of being a promoter is 0.677072.
+CRE18453 upstream (2000bp),site:151-232 is predicted as Promoter. Its probability score of being a promoter is 0.683172.
+CRE18453 upstream (2000bp),site:152-233 is predicted as Promoter. Its probability score of being a promoter is 0.697552.
+CRE18453 upstream (2000bp),site:154-235 is predicted as Promoter. Its probability score of being a promoter is 0.996527.
+CRE18453 upstream (2000bp),site:155-236 is predicted as Promoter. Its probability score of being a promoter is 0.972582.
+CRE18453 upstream (2000bp),site:156-237 is predicted as Promoter. Its probability score of being a promoter is 0.775929.
+CRE18453 upstream (2000bp),site:158-239 is predicted as Promoter. Its probability score of being a promoter is 0.957368.
+CRE18453 upstream (2000bp),site:161-242 is predicted as Promoter. Its probability score of being a promoter is 0.96171.
+CRE18453 upstream (2000bp),site:163-244 is predicted as Promoter. Its probability score of being a promoter is 0.955462.
+CRE18453 upstream (2000bp),site:167-248 is predicted as Promoter. Its probability score of being a promoter is 0.716109.
+CRE18453 upstream (2000bp),site:181-262 is predicted as Promoter. Its probability score of being a promoter is 0.850499.
+CRE18453 upstream (2000bp),site:182-263 is predicted as Promoter. Its probability score of being a promoter is 0.826239.
+CRE18453 upstream (2000bp),site:185-266 is predicted as Promoter. Its probability score of being a promoter is 0.957207.
+CRE18453 upstream (2000bp),site:186-267 is predicted as Promoter. Its probability score of being a promoter is 0.833616.
+CRE18453 upstream (2000bp),site:187-268 is predicted as Promoter. Its probability score of being a promoter is 0.978775.
+CRE18453 upstream (2000bp),site:193-274 is predicted as Promoter. Its probability score of being a promoter is 0.824138.
+CRE18453 upstream (2000bp),site:198-279 is predicted as Promoter. Its probability score of being a promoter is 0.914748.
+CRE18453 upstream (2000bp),site:219-300 is predicted as Promoter. Its probability score of being a promoter is 0.567708.
+CRE18453 upstream (2000bp),site:220-301 is predicted as Promoter. Its probability score of being a promoter is 0.768915.
+CRE18453 upstream (2000bp),site:231-312 is predicted as Promoter. Its probability score of being a promoter is 0.692421.
+CRE18453 upstream (2000bp),site:232-313 is predicted as Promoter. Its probability score of being a promoter is 0.926399.
+CRE18453 upstream (2000bp),site:233-314 is predicted as Promoter. Its probability score of being a promoter is 0.959729.
+CRE18453 upstream (2000bp),site:234-315 is predicted as Promoter. Its probability score of being a promoter is 0.77613.
+CRE18453 upstream (2000bp),site:235-316 is predicted as Promoter. Its probability score of being a promoter is 0.703471.
+CRE18453 upstream (2000bp),site:266-347 is predicted as Promoter. Its probability score of being a promoter is 0.953082.
+CRE18453 upstream (2000bp),site:267-348 is predicted as Promoter. Its probability score of being a promoter is 0.993617.
+CRE18453 upstream (2000bp),site:268-349 is predicted as Promoter. Its probability score of being a promoter is 0.948337.
+CRE18453 upstream (2000bp),site:269-350 is predicted as Promoter. Its probability score of being a promoter is 0.830669.
+CRE18453 upstream (2000bp),site:270-351 is predicted as Promoter. Its probability score of being a promoter is 0.998261.
+CRE18453 upstream (2000bp),site:272-353 is predicted as Promoter. Its probability score of being a promoter is 0.505181.
+CRE18453 upstream (2000bp),site:273-354 is predicted as Promoter. Its probability score of being a promoter is 0.533188.
+CRE18453 upstream (2000bp),site:276-357 is predicted as Promoter. Its probability score of being a promoter is 0.853827.
+CRE18453 upstream (2000bp),site:277-358 is predicted as Promoter. Its probability score of being a promoter is 0.985381.
+CRE18453 upstream (2000bp),site:278-359 is predicted as Promoter. Its probability score of being a promoter is 0.76041.
+CRE18453 upstream (2000bp),site:480-561 is predicted as Promoter. Its probability score of being a promoter is 0.906981.
+CRE18453 upstream (2000bp),site:490-571 is predicted as Promoter. Its probability score of being a promoter is 0.755352.
+CRE18453 upstream (2000bp),site:513-594 is predicted as Promoter. Its probability score of being a promoter is 0.823973.
+CRE18453 upstream (2000bp),site:515-596 is predicted as Promoter. Its probability score of being a promoter is 0.849979.
+CRE18453 upstream (2000bp),site:516-597 is predicted as Promoter. Its probability score of being a promoter is 0.614789.
+CRE18453 upstream (2000bp),site:519-600 is predicted as Promoter. Its probability score of being a promoter is 0.567419.
+CRE18453 upstream (2000bp),site:520-601 is predicted as Promoter. Its probability score of being a promoter is 0.789801.
+CRE18453 upstream (2000bp),site:521-602 is predicted as Promoter. Its probability score of being a promoter is 0.94771.
+CRE18453 upstream (2000bp),site:522-603 is predicted as Promoter. Its probability score of being a promoter is 0.996645.
+CRE18453 upstream (2000bp),site:523-604 is predicted as Promoter. Its probability score of being a promoter is 0.999061.
+CRE18453 upstream (2000bp),site:524-605 is predicted as Promoter. Its probability score of being a promoter is 0.998588.
+CRE18453 upstream (2000bp),site:526-607 is predicted as Promoter. Its probability score of being a promoter is 0.950471.
+CRE18453 upstream (2000bp),site:535-616 is predicted as Promoter. Its probability score of being a promoter is 0.983302.
+CRE18453 upstream (2000bp),site:538-619 is predicted as Promoter. Its probability score of being a promoter is 0.981414.
+CRE18453 upstream (2000bp),site:550-631 is predicted as Promoter. Its probability score of being a promoter is 0.988286.
+CRE18453 upstream (2000bp),site:551-632 is predicted as Promoter. Its probability score of being a promoter is 0.975013.
+CRE18453 upstream (2000bp),site:552-633 is predicted as Promoter. Its probability score of being a promoter is 0.913025.
+CRE18453 upstream (2000bp),site:553-634 is predicted as Promoter. Its probability score of being a promoter is 0.744913.
+CRE18453 upstream (2000bp),site:556-637 is predicted as Promoter. Its probability score of being a promoter is 0.966938.
+CRE18453 upstream (2000bp),site:557-638 is predicted as Promoter. Its probability score of being a promoter is 0.994242.
+CRE18453 upstream (2000bp),site:559-640 is predicted as Promoter. Its probability score of being a promoter is 0.779746.
+CRE18453 upstream (2000bp),site:560-641 is predicted as Promoter. Its probability score of being a promoter is 0.940528.
+CRE18453 upstream (2000bp),site:561-642 is predicted as Promoter. Its probability score of being a promoter is 0.958551.
+CRE18453 upstream (2000bp),site:562-643 is predicted as Promoter. Its probability score of being a promoter is 0.729216.
+CRE18453 upstream (2000bp),site:564-645 is predicted as Promoter. Its probability score of being a promoter is 0.996299.
+CRE18453 upstream (2000bp),site:565-646 is predicted as Promoter. Its probability score of being a promoter is 0.867861.
+CRE18453 upstream (2000bp),site:568-649 is predicted as Promoter. Its probability score of being a promoter is 0.762115.
+CRE18453 upstream (2000bp),site:569-650 is predicted as Promoter. Its probability score of being a promoter is 0.576545.
+CRE18453 upstream (2000bp),site:572-653 is predicted as Promoter. Its probability score of being a promoter is 0.778609.
+CRE18453 upstream (2000bp),site:578-659 is predicted as Promoter. Its probability score of being a promoter is 0.657678.
+CRE18453 upstream (2000bp),site:579-660 is predicted as Promoter. Its probability score of being a promoter is 0.945755.
+CRE18453 upstream (2000bp),site:580-661 is predicted as Promoter. Its probability score of being a promoter is 0.848469.
+CRE18453 upstream (2000bp),site:582-663 is predicted as Promoter. Its probability score of being a promoter is 0.841152.
+CRE18453 upstream (2000bp),site:584-665 is predicted as Promoter. Its probability score of being a promoter is 0.988263.
+CRE18453 upstream (2000bp),site:589-670 is predicted as Promoter. Its probability score of being a promoter is 0.969831.
+CRE18453 upstream (2000bp),site:590-671 is predicted as Promoter. Its probability score of being a promoter is 0.722106.
+CRE18453 upstream (2000bp),site:592-673 is predicted as Promoter. Its probability score of being a promoter is 0.838014.
+CRE18453 upstream (2000bp),site:594-675 is predicted as Promoter. Its probability score of being a promoter is 0.991991.
+CRE18453 upstream (2000bp),site:606-687 is predicted as Promoter. Its probability score of being a promoter is 0.865307.
+CRE18453 upstream (2000bp),site:610-691 is predicted as Promoter. Its probability score of being a promoter is 0.70884.
+CRE18453 upstream (2000bp),site:615-696 is predicted as Promoter. Its probability score of being a promoter is 0.953334.
+CRE18453 upstream (2000bp),site:616-697 is predicted as Promoter. Its probability score of being a promoter is 0.942688.
+CRE18453 upstream (2000bp),site:644-725 is predicted as Promoter. Its probability score of being a promoter is 0.614446.
+CRE18453 upstream (2000bp),site:647-728 is predicted as Promoter. Its probability score of being a promoter is 0.78828.
+CRE18453 upstream (2000bp),site:701-782 is predicted as Promoter. Its probability score of being a promoter is 0.561554.
+CRE18453 upstream (2000bp),site:713-794 is predicted as Promoter. Its probability score of being a promoter is 0.703281.
+CRE18453 upstream (2000bp),site:714-795 is predicted as Promoter. Its probability score of being a promoter is 0.929908.
+CRE18453 upstream (2000bp),site:715-796 is predicted as Promoter. Its probability score of being a promoter is 0.698064.
+CRE18453 upstream (2000bp),site:717-798 is predicted as Promoter. Its probability score of being a promoter is 0.95687.
+CRE18453 upstream (2000bp),site:720-801 is predicted as Promoter. Its probability score of being a promoter is 0.968166.
+CRE18453 upstream (2000bp),site:721-802 is predicted as Promoter. Its probability score of being a promoter is 0.513947.
+CRE18453 upstream (2000bp),site:722-803 is predicted as Promoter. Its probability score of being a promoter is 0.728647.
+CRE18453 upstream (2000bp),site:724-805 is predicted as Promoter. Its probability score of being a promoter is 0.766109.
+CRE18453 upstream (2000bp),site:885-966 is predicted as Promoter. Its probability score of being a promoter is 0.968909.
+CRE18453 upstream (2000bp),site:959-1040 is predicted as Promoter. Its probability score of being a promoter is 0.780903.
+CRE18453 upstream (2000bp),site:964-1045 is predicted as Promoter. Its probability score of being a promoter is 0.750498.
+CRE18453 upstream (2000bp),site:976-1057 is predicted as Promoter. Its probability score of being a promoter is 0.553467.
+CRE18453 upstream (2000bp),site:977-1058 is predicted as Promoter. Its probability score of being a promoter is 0.997267.
+CRE18453 upstream (2000bp),site:980-1061 is predicted as Promoter. Its probability score of being a promoter is 0.780779.
+CRE18453 upstream (2000bp),site:991-1072 is predicted as Promoter. Its probability score of being a promoter is 0.966683.
+CRE18453 upstream (2000bp),site:992-1073 is predicted as Promoter. Its probability score of being a promoter is 0.958001.
+CRE18453 upstream (2000bp),site:995-1076 is predicted as Promoter. Its probability score of being a promoter is 0.528861.
+CRE18453 upstream (2000bp),site:996-1077 is predicted as Promoter. Its probability score of being a promoter is 0.738515.
+CRE18453 upstream (2000bp),site:997-1078 is predicted as Promoter. Its probability score of being a promoter is 0.816308.
+CRE18453 upstream (2000bp),site:999-1080 is predicted as Promoter. Its probability score of being a promoter is 0.983526.
+CRE18453 upstream (2000bp),site:1001-1082 is predicted as Promoter. Its probability score of being a promoter is 0.605002.
+CRE18453 upstream (2000bp),site:1002-1083 is predicted as Promoter. Its probability score of being a promoter is 0.997375.
+CRE18453 upstream (2000bp),site:1004-1085 is predicted as Promoter. Its probability score of being a promoter is 0.913093.
+CRE18453 upstream (2000bp),site:1011-1092 is predicted as Promoter. Its probability score of being a promoter is 0.628625.
+CRE18453 upstream (2000bp),site:1012-1093 is predicted as Promoter. Its probability score of being a promoter is 0.552284.
+CRE18453 upstream (2000bp),site:1014-1095 is predicted as Promoter. Its probability score of being a promoter is 0.87648.
+CRE18453 upstream (2000bp),site:1016-1097 is predicted as Promoter. Its probability score of being a promoter is 0.542651.
+CRE18453 upstream (2000bp),site:1017-1098 is predicted as Promoter. Its probability score of being a promoter is 0.616243.
+CRE18453 upstream (2000bp),site:1018-1099 is predicted as Promoter. Its probability score of being a promoter is 0.990602.
+CRE18453 upstream (2000bp),site:1019-1100 is predicted as Promoter. Its probability score of being a promoter is 0.842906.
+CRE18453 upstream (2000bp),site:1020-1101 is predicted as Promoter. Its probability score of being a promoter is 0.977726.
+CRE18453 upstream (2000bp),site:1022-1103 is predicted as Promoter. Its probability score of being a promoter is 0.852564.
+CRE18453 upstream (2000bp),site:1024-1105 is predicted as Promoter. Its probability score of being a promoter is 0.958822.
+CRE18453 upstream (2000bp),site:1025-1106 is predicted as Promoter. Its probability score of being a promoter is 0.883016.
+CRE18453 upstream (2000bp),site:1031-1112 is predicted as Promoter. Its probability score of being a promoter is 0.949636.
+CRE18453 upstream (2000bp),site:1032-1113 is predicted as Promoter. Its probability score of being a promoter is 0.967081.
+CRE18453 upstream (2000bp),site:1033-1114 is predicted as Promoter. Its probability score of being a promoter is 0.984682.
+CRE18453 upstream (2000bp),site:1034-1115 is predicted as Promoter. Its probability score of being a promoter is 0.957408.
+CRE18453 upstream (2000bp),site:1036-1117 is predicted as Promoter. Its probability score of being a promoter is 0.9817.
+CRE18453 upstream (2000bp),site:1037-1118 is predicted as Promoter. Its probability score of being a promoter is 0.741108.
+CRE18453 upstream (2000bp),site:1038-1119 is predicted as Promoter. Its probability score of being a promoter is 0.650947.
+CRE18453 upstream (2000bp),site:1042-1123 is predicted as Promoter. Its probability score of being a promoter is 0.763759.
+CRE18453 upstream (2000bp),site:1044-1125 is predicted as Promoter. Its probability score of being a promoter is 0.951459.
+CRE18453 upstream (2000bp),site:1046-1127 is predicted as Promoter. Its probability score of being a promoter is 0.944754.
+CRE18453 upstream (2000bp),site:1048-1129 is predicted as Promoter. Its probability score of being a promoter is 0.983831.
+CRE18453 upstream (2000bp),site:1049-1130 is predicted as Promoter. Its probability score of being a promoter is 0.980633.
+CRE18453 upstream (2000bp),site:1050-1131 is predicted as Promoter. Its probability score of being a promoter is 0.540831.
+CRE18453 upstream (2000bp),site:1051-1132 is predicted as Promoter. Its probability score of being a promoter is 0.633115.
+CRE18453 upstream (2000bp),site:1052-1133 is predicted as Promoter. Its probability score of being a promoter is 0.769744.
+CRE18453 upstream (2000bp),site:1060-1141 is predicted as Promoter. Its probability score of being a promoter is 0.965314.
+CRE18453 upstream (2000bp),site:1061-1142 is predicted as Promoter. Its probability score of being a promoter is 0.504804.
+CRE18453 upstream (2000bp),site:1062-1143 is predicted as Promoter. Its probability score of being a promoter is 0.998744.
+CRE18453 upstream (2000bp),site:1063-1144 is predicted as Promoter. Its probability score of being a promoter is 0.996567.
+CRE18453 upstream (2000bp),site:1064-1145 is predicted as Promoter. Its probability score of being a promoter is 0.986641.
+CRE18453 upstream (2000bp),site:1065-1146 is predicted as Promoter. Its probability score of being a promoter is 0.980902.
+CRE18453 upstream (2000bp),site:1066-1147 is predicted as Promoter. Its probability score of being a promoter is 0.998575.
+CRE18453 upstream (2000bp),site:1067-1148 is predicted as Promoter. Its probability score of being a promoter is 0.895504.
+CRE18453 upstream (2000bp),site:1068-1149 is predicted as Promoter. Its probability score of being a promoter is 0.949272.
+CRE18453 upstream (2000bp),site:1069-1150 is predicted as Promoter. Its probability score of being a promoter is 0.773999.
+CRE18453 upstream (2000bp),site:1070-1151 is predicted as Promoter. Its probability score of being a promoter is 0.513496.
+CRE18453 upstream (2000bp),site:1083-1164 is predicted as Promoter. Its probability score of being a promoter is 0.523887.
+CRE18453 upstream (2000bp),site:1267-1348 is predicted as Promoter. Its probability score of being a promoter is 0.549585.
+CRE18453 upstream (2000bp),site:1268-1349 is predicted as Promoter. Its probability score of being a promoter is 0.625823.
+CRE18453 upstream (2000bp),site:1269-1350 is predicted as Promoter. Its probability score of being a promoter is 0.679345.
+CRE18453 upstream (2000bp),site:1270-1351 is predicted as Promoter. Its probability score of being a promoter is 0.897139.
+CRE18453 upstream (2000bp),site:1271-1352 is predicted as Promoter. Its probability score of being a promoter is 0.710389.
+CRE18453 upstream (2000bp),site:1272-1353 is predicted as Promoter. Its probability score of being a promoter is 0.942783.
+CRE18453 upstream (2000bp),site:1273-1354 is predicted as Promoter. Its probability score of being a promoter is 0.805525.
+CRE18453 upstream (2000bp),site:1274-1355 is predicted as Promoter. Its probability score of being a promoter is 0.539561.
+CRE18453 upstream (2000bp),site:1277-1358 is predicted as Promoter. Its probability score of being a promoter is 0.711241.
+CRE18453 upstream (2000bp),site:1278-1359 is predicted as Promoter. Its probability score of being a promoter is 0.977484.
+CRE18453 upstream (2000bp),site:1300-1381 is predicted as Promoter. Its probability score of being a promoter is 0.514339.
+CRE18453 upstream (2000bp),site:1302-1383 is predicted as Promoter. Its probability score of being a promoter is 0.855132.
+CRE18453 upstream (2000bp),site:1303-1384 is predicted as Promoter. Its probability score of being a promoter is 0.556155.
+CRE18453 upstream (2000bp),site:1304-1385 is predicted as Promoter. Its probability score of being a promoter is 0.992375.
+CRE18453 upstream (2000bp),site:1305-1386 is predicted as Promoter. Its probability score of being a promoter is 0.995461.
+CRE18453 upstream (2000bp),site:1306-1387 is predicted as Promoter. Its probability score of being a promoter is 0.995674.
+CRE18453 upstream (2000bp),site:1307-1388 is predicted as Promoter. Its probability score of being a promoter is 0.964598.
+CRE18453 upstream (2000bp),site:1313-1394 is predicted as Promoter. Its probability score of being a promoter is 0.985333.
+CRE18453 upstream (2000bp),site:1314-1395 is predicted as Promoter. Its probability score of being a promoter is 0.87415.
+CRE18453 upstream (2000bp),site:1315-1396 is predicted as Promoter. Its probability score of being a promoter is 0.974212.
+CRE18453 upstream (2000bp),site:1331-1412 is predicted as Promoter. Its probability score of being a promoter is 0.584282.
+CRE18453 upstream (2000bp),site:1357-1438 is predicted as Promoter. Its probability score of being a promoter is 0.954746.
+CRE18453 upstream (2000bp),site:1358-1439 is predicted as Promoter. Its probability score of being a promoter is 0.569651.
+CRE18453 upstream (2000bp),site:1359-1440 is predicted as Promoter. Its probability score of being a promoter is 0.881634.
+CRE18453 upstream (2000bp),site:1541-1622 is predicted as Promoter. Its probability score of being a promoter is 0.881866.
+CRE18453 upstream (2000bp),site:1543-1624 is predicted as Promoter. Its probability score of being a promoter is 0.568146.
+CRE18453 upstream (2000bp),site:1544-1625 is predicted as Promoter. Its probability score of being a promoter is 0.573106.
+CRE18453 upstream (2000bp),site:1545-1626 is predicted as Promoter. Its probability score of being a promoter is 0.536255.
+CRE18453 upstream (2000bp),site:1546-1627 is predicted as Promoter. Its probability score of being a promoter is 0.984457.
+CRE18453 upstream (2000bp),site:1549-1630 is predicted as Promoter. Its probability score of being a promoter is 0.998792.
+CRE18453 upstream (2000bp),site:1550-1631 is predicted as Promoter. Its probability score of being a promoter is 0.999555.
+CRE18453 upstream (2000bp),site:1551-1632 is predicted as Promoter. Its probability score of being a promoter is 0.969727.
+CRE18453 upstream (2000bp),site:1552-1633 is predicted as Promoter. Its probability score of being a promoter is 0.983758.
+CRE18453 upstream (2000bp),site:1553-1634 is predicted as Promoter. Its probability score of being a promoter is 0.995019.
+CRE18453 upstream (2000bp),site:1554-1635 is predicted as Promoter. Its probability score of being a promoter is 0.896497.
+CRE18453 upstream (2000bp),site:1555-1636 is predicted as Promoter. Its probability score of being a promoter is 0.99945.
+CRE18453 upstream (2000bp),site:1557-1638 is predicted as Promoter. Its probability score of being a promoter is 0.647752.
+CRE18453 upstream (2000bp),site:1558-1639 is predicted as Promoter. Its probability score of being a promoter is 0.992994.
+CRE18453 upstream (2000bp),site:1559-1640 is predicted as Promoter. Its probability score of being a promoter is 0.971779.
+CRE18453 upstream (2000bp),site:1560-1641 is predicted as Promoter. Its probability score of being a promoter is 0.973602.
+CRE18453 upstream (2000bp),site:1574-1655 is predicted as Promoter. Its probability score of being a promoter is 0.74887.
+CRE18453 upstream (2000bp),site:1577-1658 is predicted as Promoter. Its probability score of being a promoter is 0.992564.
+CRE18453 upstream (2000bp),site:1582-1663 is predicted as Promoter. Its probability score of being a promoter is 0.698518.
+CRE18453 upstream (2000bp),site:1583-1664 is predicted as Promoter. Its probability score of being a promoter is 0.945713.
+CRE18453 upstream (2000bp),site:1584-1665 is predicted as Promoter. Its probability score of being a promoter is 0.908941.
+CRE18453 upstream (2000bp),site:1586-1667 is predicted as Promoter. Its probability score of being a promoter is 0.912906.
+CRE18453 upstream (2000bp),site:1592-1673 is predicted as Promoter. Its probability score of being a promoter is 0.757897.
+CRE18453 upstream (2000bp),site:1625-1706 is predicted as Promoter. Its probability score of being a promoter is 0.511782.
+CRE18453 upstream (2000bp),site:1646-1727 is predicted as Promoter. Its probability score of being a promoter is 0.932725.
+CRE18453 upstream (2000bp),site:1647-1728 is predicted as Promoter. Its probability score of being a promoter is 0.983614.
+CRE18453 upstream (2000bp),site:1658-1739 is predicted as Promoter. Its probability score of being a promoter is 0.742603.
+CRE18453 upstream (2000bp),site:1659-1740 is predicted as Promoter. Its probability score of being a promoter is 0.723686.
+CRE18453 upstream (2000bp),site:1663-1744 is predicted as Promoter. Its probability score of being a promoter is 0.586814.
+CRE18453 upstream (2000bp),site:1668-1749 is predicted as Promoter. Its probability score of being a promoter is 0.926131.
+CRE18453 upstream (2000bp),site:1669-1750 is predicted as Promoter. Its probability score of being a promoter is 0.983105.
+CRE18453 upstream (2000bp),site:1670-1751 is predicted as Promoter. Its probability score of being a promoter is 0.972356.
+CRE18453 upstream (2000bp),site:1671-1752 is predicted as Promoter. Its probability score of being a promoter is 0.971974.
+CRE18453 upstream (2000bp),site:1673-1754 is predicted as Promoter. Its probability score of being a promoter is 0.901558.
+CRE18453 upstream (2000bp),site:1674-1755 is predicted as Promoter. Its probability score of being a promoter is 0.948779.
+CRE18453 upstream (2000bp),site:1675-1756 is predicted as Promoter. Its probability score of being a promoter is 0.582149.
+CRE18453 upstream (2000bp),site:1681-1762 is predicted as Promoter. Its probability score of being a promoter is 0.886856.
+CRE18453 upstream (2000bp),site:1682-1763 is predicted as Promoter. Its probability score of being a promoter is 0.992367.
+CRE18453 upstream (2000bp),site:1683-1764 is predicted as Promoter. Its probability score of being a promoter is 0.895116.
+CRE18453 upstream (2000bp),site:1684-1765 is predicted as Promoter. Its probability score of being a promoter is 0.971226.
+CRE18453 upstream (2000bp),site:1686-1767 is predicted as Promoter. Its probability score of being a promoter is 0.982631.
+CRE18453 upstream (2000bp),site:1687-1768 is predicted as Promoter. Its probability score of being a promoter is 0.980149.
+CRE18453 upstream (2000bp),site:1693-1774 is predicted as Promoter. Its probability score of being a promoter is 0.9134.
+CRE18453 upstream (2000bp),site:1695-1776 is predicted as Promoter. Its probability score of being a promoter is 0.972127.
+CRE18453 upstream (2000bp),site:1697-1778 is predicted as Promoter. Its probability score of being a promoter is 0.98616.
+CRE18453 upstream (2000bp),site:1698-1779 is predicted as Promoter. Its probability score of being a promoter is 0.654707.
+CRE18453 upstream (2000bp),site:1699-1780 is predicted as Promoter. Its probability score of being a promoter is 0.925263.
+CRE18453 upstream (2000bp),site:1701-1782 is predicted as Promoter. Its probability score of being a promoter is 0.967683.
+CRE18453 upstream (2000bp),site:1702-1783 is predicted as Promoter. Its probability score of being a promoter is 0.81807.
+CRE18453 upstream (2000bp),site:1703-1784 is predicted as Promoter. Its probability score of being a promoter is 0.529197.
+CRE18453 upstream (2000bp),site:1704-1785 is predicted as Promoter. Its probability score of being a promoter is 0.750299.
+CRE18453 upstream (2000bp),site:1717-1798 is predicted as Promoter. Its probability score of being a promoter is 0.867243.
+CRE18453 upstream (2000bp),site:1725-1806 is predicted as Promoter. Its probability score of being a promoter is 0.69177.
+CRE18453 upstream (2000bp),site:1738-1819 is predicted as Promoter. Its probability score of being a promoter is 0.802304.
+CRE18453 upstream (2000bp),site:1739-1820 is predicted as Promoter. Its probability score of being a promoter is 0.985896.
+CRE18453 upstream (2000bp),site:1747-1828 is predicted as Promoter. Its probability score of being a promoter is 0.728938.
+CRE18453 upstream (2000bp),site:1750-1831 is predicted as Promoter. Its probability score of being a promoter is 0.976401.
+CRE18453 upstream (2000bp),site:1751-1832 is predicted as Promoter. Its probability score of being a promoter is 0.982491.
+CRE18453 upstream (2000bp),site:1752-1833 is predicted as Promoter. Its probability score of being a promoter is 0.991597.
+CRE18453 upstream (2000bp),site:1753-1834 is predicted as Promoter. Its probability score of being a promoter is 0.982168.
+CRE18453 upstream (2000bp),site:1754-1835 is predicted as Promoter. Its probability score of being a promoter is 0.96147.
+CRE18453 upstream (2000bp),site:1755-1836 is predicted as Promoter. Its probability score of being a promoter is 0.760991.
+CRE18453 upstream (2000bp),site:1756-1837 is predicted as Promoter. Its probability score of being a promoter is 0.79946.
+CRE18453 upstream (2000bp),site:1757-1838 is predicted as Promoter. Its probability score of being a promoter is 0.80072.
+CRE18453 upstream (2000bp),site:1762-1843 is predicted as Promoter. Its probability score of being a promoter is 0.975653.
+CRE18453 upstream (2000bp),site:1764-1845 is predicted as Promoter. Its probability score of being a promoter is 0.662489.
+CRE18453 upstream (2000bp),site:1767-1848 is predicted as Promoter. Its probability score of being a promoter is 0.638558.
+CRE18453 upstream (2000bp),site:1768-1849 is predicted as Promoter. Its probability score of being a promoter is 0.583319.
+CRE18453 upstream (2000bp),site:1772-1853 is predicted as Promoter. Its probability score of being a promoter is 0.503358.
+CRE18453 upstream (2000bp),site:1868-1949 is predicted as Promoter. Its probability score of being a promoter is 0.862604.
+CRE18453 upstream (2000bp),site:1870-1951 is predicted as Promoter. Its probability score of being a promoter is 0.70279.
+CRE18453 upstream (2000bp),site:1873-1954 is predicted as Promoter. Its probability score of being a promoter is 0.941674.
+CRE18453 upstream (2000bp),site:1875-1956 is predicted as Promoter. Its probability score of being a promoter is 0.689014.
+CRE18453 upstream (2000bp),site:1877-1958 is predicted as Promoter. Its probability score of being a promoter is 0.772446.
+CRE18453 upstream (2000bp),site:1882-1963 is predicted as Promoter. Its probability score of being a promoter is 0.760822.
+CRE18453 upstream (2000bp),site:1884-1965 is predicted as Promoter. Its probability score of being a promoter is 0.630314.
+CRE18453 upstream (2000bp),site:1886-1967 is predicted as Promoter. Its probability score of being a promoter is 0.815477.
+CRE18453 upstream (2000bp),site:1891-1972 is predicted as Promoter. Its probability score of being a promoter is 0.512542.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:2-83 is predicted as Promoter. Its probability score of being a promoter is 0.834302.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:8-89 is predicted as Promoter. Its probability score of being a promoter is 0.50449.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:9-90 is predicted as Promoter. Its probability score of being a promoter is 0.901217.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:11-92 is predicted as Promoter. Its probability score of being a promoter is 0.986288.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:12-93 is predicted as Promoter. Its probability score of being a promoter is 0.913178.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:16-97 is predicted as Promoter. Its probability score of being a promoter is 0.9089.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:89-170 is predicted as Promoter. Its probability score of being a promoter is 0.766937.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:91-172 is predicted as Promoter. Its probability score of being a promoter is 0.511867.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:93-174 is predicted as Promoter. Its probability score of being a promoter is 0.613092.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:94-175 is predicted as Promoter. Its probability score of being a promoter is 0.650223.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:101-182 is predicted as Promoter. Its probability score of being a promoter is 0.991429.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:103-184 is predicted as Promoter. Its probability score of being a promoter is 0.927248.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:104-185 is predicted as Promoter. Its probability score of being a promoter is 0.942736.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:106-187 is predicted as Promoter. Its probability score of being a promoter is 0.95392.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:107-188 is predicted as Promoter. Its probability score of being a promoter is 0.993808.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:108-189 is predicted as Promoter. Its probability score of being a promoter is 0.653634.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:109-190 is predicted as Promoter. Its probability score of being a promoter is 0.972802.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:110-191 is predicted as Promoter. Its probability score of being a promoter is 0.803748.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:116-197 is predicted as Promoter. Its probability score of being a promoter is 0.859022.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:120-201 is predicted as Promoter. Its probability score of being a promoter is 0.574437.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:126-207 is predicted as Promoter. Its probability score of being a promoter is 0.929123.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:137-218 is predicted as Promoter. Its probability score of being a promoter is 0.747633.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:147-228 is predicted as Promoter. Its probability score of being a promoter is 0.509946.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:152-233 is predicted as Promoter. Its probability score of being a promoter is 0.562458.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:155-236 is predicted as Promoter. Its probability score of being a promoter is 0.850274.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:157-238 is predicted as Promoter. Its probability score of being a promoter is 0.931763.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:160-241 is predicted as Promoter. Its probability score of being a promoter is 0.666065.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:161-242 is predicted as Promoter. Its probability score of being a promoter is 0.714128.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:162-243 is predicted as Promoter. Its probability score of being a promoter is 0.564334.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:163-244 is predicted as Promoter. Its probability score of being a promoter is 0.96578.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:165-246 is predicted as Promoter. Its probability score of being a promoter is 0.557351.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:168-249 is predicted as Promoter. Its probability score of being a promoter is 0.960172.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:170-251 is predicted as Promoter. Its probability score of being a promoter is 0.569043.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:183-264 is predicted as Promoter. Its probability score of being a promoter is 0.719769.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:188-269 is predicted as Promoter. Its probability score of being a promoter is 0.623784.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:275-356 is predicted as Promoter. Its probability score of being a promoter is 0.809464.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:295-376 is predicted as Promoter. Its probability score of being a promoter is 0.923755.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:298-379 is predicted as Promoter. Its probability score of being a promoter is 0.596297.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:299-380 is predicted as Promoter. Its probability score of being a promoter is 0.915869.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:324-405 is predicted as Promoter. Its probability score of being a promoter is 0.692223.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:325-406 is predicted as Promoter. Its probability score of being a promoter is 0.713481.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:337-418 is predicted as Promoter. Its probability score of being a promoter is 0.779285.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:338-419 is predicted as Promoter. Its probability score of being a promoter is 0.965092.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:339-420 is predicted as Promoter. Its probability score of being a promoter is 0.721862.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:340-421 is predicted as Promoter. Its probability score of being a promoter is 0.976565.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:344-425 is predicted as Promoter. Its probability score of being a promoter is 0.928486.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:345-426 is predicted as Promoter. Its probability score of being a promoter is 0.832976.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:375-456 is predicted as Promoter. Its probability score of being a promoter is 0.775444.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:396-477 is predicted as Promoter. Its probability score of being a promoter is 0.588494.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:403-484 is predicted as Promoter. Its probability score of being a promoter is 0.930124.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:413-494 is predicted as Promoter. Its probability score of being a promoter is 0.514442.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:421-502 is predicted as Promoter. Its probability score of being a promoter is 0.796172.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:431-512 is predicted as Promoter. Its probability score of being a promoter is 0.63969.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:432-513 is predicted as Promoter. Its probability score of being a promoter is 0.625616.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:438-519 is predicted as Promoter. Its probability score of being a promoter is 0.87685.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:440-521 is predicted as Promoter. Its probability score of being a promoter is 0.868337.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:458-539 is predicted as Promoter. Its probability score of being a promoter is 0.791739.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:459-540 is predicted as Promoter. Its probability score of being a promoter is 0.962272.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:460-541 is predicted as Promoter. Its probability score of being a promoter is 0.578108.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:461-542 is predicted as Promoter. Its probability score of being a promoter is 0.955985.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:464-545 is predicted as Promoter. Its probability score of being a promoter is 0.953353.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:467-548 is predicted as Promoter. Its probability score of being a promoter is 0.719241.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:470-551 is predicted as Promoter. Its probability score of being a promoter is 0.91967.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:479-560 is predicted as Promoter. Its probability score of being a promoter is 0.782956.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:481-562 is predicted as Promoter. Its probability score of being a promoter is 0.868833.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:482-563 is predicted as Promoter. Its probability score of being a promoter is 0.918128.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:483-564 is predicted as Promoter. Its probability score of being a promoter is 0.947383.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:484-565 is predicted as Promoter. Its probability score of being a promoter is 0.535652.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:485-566 is predicted as Promoter. Its probability score of being a promoter is 0.932367.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:486-567 is predicted as Promoter. Its probability score of being a promoter is 0.555527.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:489-570 is predicted as Promoter. Its probability score of being a promoter is 0.503331.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:491-572 is predicted as Promoter. Its probability score of being a promoter is 0.973619.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:497-578 is predicted as Promoter. Its probability score of being a promoter is 0.543481.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:539-620 is predicted as Promoter. Its probability score of being a promoter is 0.647748.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:787-868 is predicted as Promoter. Its probability score of being a promoter is 0.917319.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:797-878 is predicted as Promoter. Its probability score of being a promoter is 0.906786.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:798-879 is predicted as Promoter. Its probability score of being a promoter is 0.663792.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:799-880 is predicted as Promoter. Its probability score of being a promoter is 0.969319.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:800-881 is predicted as Promoter. Its probability score of being a promoter is 0.994505.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:801-882 is predicted as Promoter. Its probability score of being a promoter is 0.505856.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:804-885 is predicted as Promoter. Its probability score of being a promoter is 0.938709.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:805-886 is predicted as Promoter. Its probability score of being a promoter is 0.987521.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:807-888 is predicted as Promoter. Its probability score of being a promoter is 0.592225.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:809-890 is predicted as Promoter. Its probability score of being a promoter is 0.858919.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:810-891 is predicted as Promoter. Its probability score of being a promoter is 0.521759.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:813-894 is predicted as Promoter. Its probability score of being a promoter is 0.532438.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:814-895 is predicted as Promoter. Its probability score of being a promoter is 0.615774.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:815-896 is predicted as Promoter. Its probability score of being a promoter is 0.512352.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:817-898 is predicted as Promoter. Its probability score of being a promoter is 0.942984.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:818-899 is predicted as Promoter. Its probability score of being a promoter is 0.928689.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:819-900 is predicted as Promoter. Its probability score of being a promoter is 0.803818.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:820-901 is predicted as Promoter. Its probability score of being a promoter is 0.943147.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:821-902 is predicted as Promoter. Its probability score of being a promoter is 0.845544.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:822-903 is predicted as Promoter. Its probability score of being a promoter is 0.973685.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:823-904 is predicted as Promoter. Its probability score of being a promoter is 0.982992.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:824-905 is predicted as Promoter. Its probability score of being a promoter is 0.879775.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:828-909 is predicted as Promoter. Its probability score of being a promoter is 0.902224.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:831-912 is predicted as Promoter. Its probability score of being a promoter is 0.909508.
+CRE09885 Unspliced + UTR + upstream + downstream (914bp),site:833-914 is predicted as Promoter. Its probability score of being a promoter is 0.985691.
