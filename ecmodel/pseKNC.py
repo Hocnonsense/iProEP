@@ -142,61 +142,49 @@ def cal_label(feature):
 AA = 2  # 二联体
 
 
-def pseKNC(sequences, pseFeaFile):
-    para_w = 0.1
-    rank = 12
-    win_size = 4
-    out = open(pseFeaFile, "w")
+def pseKNC(sequences: list[str], pseFeaFile: str, para_w=0.1, rank=12, win_size=4):
+    with open(pseFeaFile, "w") as out:
+        ###读取promoter数据,类别标签为1
+        for line in sequences:
+            if line.startswith(">"):  # 跳过注释行
+                continue
+            # 将碱基序列转换成大写, 去掉行末换行符
+            line = line.upper().strip("\n\r")
 
-    ###读取promoter数据,类别标签为1
-    for line in sequences:
-        if line[0] == ">":  # 跳过注释行
-            continue
-        line = line.upper()  # 将碱基序列转换成大写
-        line = line.strip("\n\r")  # 去掉行末换行符
-        number = [0] * len(line)
+            # 将碱基A，C，G，T转换成数字0,1,2,3
+            num_seq = [tran_digital(i) for i in line]
+            len_seq = len(num_seq)
 
-        # 将碱基A，C，G，T转换成数字0,1,2,3
-        for i in range(0, len(line)):
-            number[i] = tran_digital(line[i])
+            # 求出现频数
+            wind_len = len_seq - win_size + 1
+            kmer_count = [0.0] * (4**win_size)
+            for i in range(wind_len):
+                kmer_count[cal_label(num_seq[i : i + win_size])] += 1
 
-        # 求出现频数
-        frequence = [0] * (4**win_size)
-        for i in range(0, len(number) - win_size + 1):
-            id = cal_label(number[i : i + win_size])
-            frequence[id] += 1
+            # 求出现频率
+            frequence = [i / wind_len for i in kmer_count]
 
-        # 求出现频率
-        for i in range(0, len(frequence)):
-            frequence[i] /= float(len(number) - win_size + 1)
+            # 求Pse特征
+            pseall = []
+            for m in range(1, rank + 1):
+                sumpro = 0.0
+                for l in properties:
+                    for n in range(len_seq - AA - m + 1):  #
+                        sumpro += (
+                            l[cal_label(num_seq[n : n + AA])]
+                            * l[cal_label(num_seq[n + m : n + m + AA])]
+                        )
+                    pseall.append(sumpro / (len_seq - m - 1))  # 追加进数组
+            sumpse = sum(pseall)
 
-        # 求Pse特征
-        pseall = []
-        for m in range(1, rank + 1):
-            sumpro = 0.0
-            for l in range(0, len(properties)):
-                for n in range(0, len(number) - AA - m + 1):  #
-                    sumpro += (
-                        properties[l][cal_label(number[n : n + AA])]
-                        * properties[l][cal_label(number[n + m : n + m + AA])]
-                    )
-                sumpro /= len(number) - m - 1
-                pseall.append(sumpro)  # 追加进数组
-        sumpse = sum(pseall)
+            ###得到并输出所有特征all
+            final_frequence = [i / (1 + para_w * sumpse) for i in frequence]
+            final_pseall = [i * (para_w / (1 + para_w * sumpse)) for i in pseall]
 
-        ###得到并输出所有特征all
-        for f in range(0, len(frequence)):
-            frequence[f] /= 1 + para_w * sumpse
-        for p in range(0, len(pseall)):
-            pseall[p] = (
-                pseall[p] * para_w / (1 + para_w * sumpse)
-            )  ###少一个para_w，，，改为: pseall[p] = pseall[p]*para_w / (1+para_w*sumpse)
-        all = frequence + pseall
-        out.write("1\t")
-        for i in range(len(all)):
-            out.write("%d:%.8f\t" % (i + 1, all[i]))
-        out.write("\n")  # 每行结束换行
-    out.close()
+            out.write("1\t")
+            for i, v in enumerate((*final_frequence, *final_pseall)):
+                out.write(f"{i+1}:{v:.8f}\t")
+            out.write("\n")  # 每行结束换行
 
 
 """

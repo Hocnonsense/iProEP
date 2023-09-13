@@ -3,7 +3,7 @@
  * @Date: Tue Apr 3 09:52:47 2018
  * @author: laihy
  * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
- * @LastEditTime: 2023-09-12 15:46:31
+ * @LastEditTime: 2023-09-13 18:34:27
  * @FilePath: /iProEP_localtool/cemodel/pseKNC.py
  * @Description:
 """
@@ -122,16 +122,9 @@ properties = [Twist, Tilt, Roll, Shift, Slide, Rise]
 
 
 ###将碱基A，C，G，T转换成数字0,1,2,3###
-def tran_digital(ch):
-    if ch == "A":
-        return 0
-    elif ch == "C":
-        return 1
-    elif ch == "G":
-        return 2
-    elif ch == "T":
-        return 3
-    return ValueError("Unexpected base")
+def tran_digital(ch: str):
+    assert len(ch) == 1, "Unexpected sequence"
+    return "ACGT".index(ch)
 
 
 ###将每次读取的碱基片段转化成十进制标号，如窗口为3时，将AAA到TTT标号为0-63。###
@@ -145,10 +138,7 @@ def cal_label(feature):
 AA = 2  # 二联体
 
 
-def pseKNC(sequences: list[str], pseFeaFile: str):
-    para_w = 0.1
-    rank = 22
-    win_size = 4
+def pseKNC(sequences: list[str], pseFeaFile: str, para_w=0.1, rank=22, win_size=4):
     with open(pseFeaFile, "w") as out:
         ###读取promoter数据,类别标签为1
         for line in sequences:
@@ -174,14 +164,13 @@ def pseKNC(sequences: list[str], pseFeaFile: str):
             pseall = []
             for m in range(1, rank + 1):
                 sumpro = 0.0
-                for l in range(len(properties)):
+                for l in properties:
                     for n in range(len_seq - AA - m + 1):  #
                         sumpro += (
-                            properties[l][cal_label(num_seq[n : n + AA])]
-                            * properties[l][cal_label(num_seq[n + m : n + m + AA])]
+                            l[cal_label(num_seq[n : n + AA])]
+                            * l[cal_label(num_seq[n + m : n + m + AA])]
                         )
-                    sumpro /= len_seq - m - 1
-                    pseall.append(sumpro)  # 追加进数组
+                    pseall.append(sumpro / (len_seq - m - 1))  # 追加进数组
             sumpse = sum(pseall)
 
             ###得到并输出所有特征all
@@ -192,3 +181,18 @@ def pseKNC(sequences: list[str], pseFeaFile: str):
             for i, v in enumerate((*final_frequence, *final_pseall)):
                 out.write(f"{i+1}:{v:.8f}\t")
             out.write("\n")  # 每行结束换行
+
+
+if __name__ == "__main__":
+    pseKNC(
+        [
+            "AGCCAGGCGAGATATGATCTATATCAATTTCTCATCTATAATGCTTTGTTAGTATCTCGTCGCCGACTTAATAAAGAGAGA",
+            "CGGGCCTATAAGCCAGGCGAGATATGATCTATATCAATTTCTCATCTATAATGCTTTGTTAGTATCTCGTCGCCGACTTAA",
+            "TATGTAACATAATGCGACCAATAATCGTAATGAATATGAGAAGTGTGATATTATAACATTTCATGACTACTGCAAGACTAA",
+            "TCGCACGGGTGGATAAGCGTTTACAGTTTTCGCAAGCTCGTAAAAGCAGTACAGTGCACCGTAAGAAAATTACAAGTATAC",
+        ],
+        "pseFeaFile.txt",
+        para_w=0.1,
+        rank=22,
+        win_size=4,
+    )
