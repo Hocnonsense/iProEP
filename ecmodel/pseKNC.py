@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Apr  3 09:52:47 2018
-
-@author: laihy
+ * @Date: Tue Apr 3 09:52:47 2018
+ * @author: laihy
+ * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
+ * @LastEditTime: 2023-09-13 19:55:30
+ * @FilePath: /iProEP_localtool/ecmodel/pseKNC.py
+ * @Description:
 """
-import os
 
 
 Twist = [
@@ -119,22 +121,16 @@ Rise = [
 properties = [Twist, Tilt, Roll, Shift, Slide, Rise]
 
 
-###将碱基A，C，G，T转换成数字0,1,2,3###
-def tran_digital(ch):
-    if ch == "A":
-        return 0
-    elif ch == "C":
-        return 1
-    elif ch == "G":
-        return 2
-    else:
-        return 3
+def tran_digital(ch: str):
+    """将碱基A，C，G，T转换成数字0,1,2,3"""
+    assert len(ch) == 1, "Unexpected sequence"
+    return "ACGT".index(ch)
 
 
-###将每次读取的碱基片段转化成十进制标号，如窗口为3时，将AAA到TTT标号为0-63。###
 def cal_label(feature):
+    """将每次读取的碱基片段转化成十进制标号，如窗口为3时，将AAA到TTT标号为0-63。"""
     index = 0
-    for i in range(0, len(feature)):
+    for i in range(len(feature)):
         index = 4 * index + feature[i]
     return index
 
@@ -174,7 +170,8 @@ def pseKNC(sequences: list[str], pseFeaFile: str, para_w=0.1, rank=12, win_size=
                             l[cal_label(num_seq[n : n + AA])]
                             * l[cal_label(num_seq[n + m : n + m + AA])]
                         )
-                    pseall.append(sumpro / (len_seq - m - 1))  # 追加进数组
+                    sumpro /= len_seq - m - 1
+                    pseall.append(sumpro)  # 追加进数组
             sumpse = sum(pseall)
 
             ###得到并输出所有特征all
