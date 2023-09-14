@@ -3,7 +3,7 @@
  * @Date: 2023-09-10 17:42:30
  * @Editors: Hong-Yan Lai et al.
  * @LastEditors: Hwrn hwrn.aou@sjtu.edu.cn
- * @LastEditTime: 2023-09-12 17:45:36
+ * @LastEditTime: 2023-09-14 13:21:17
  * @FilePath: /iProEP_localtool/iProEP.py
  * @Description:
 """
@@ -17,24 +17,29 @@ from typing import NamedTuple
 import click
 from Bio import SeqIO, SeqRecord
 
+import pseKNC
+
 
 class ModelPara(NamedTuple):
     pretypelength: int
     modelType: str
     bestn: int
+    para_w: float
+    rank: int
+    win_size: int
 
 
 def getmodelpara(preType):
     if preType == "H":
-        return ModelPara(300, "hsmodel", 410)
+        return ModelPara(300, "hsmodel", 410, para_w=0.1, rank=24, win_size=4)
     if preType == "D":
-        return ModelPara(300, "dmmodel", 893)
+        return ModelPara(300, "dmmodel", 893, para_w=0.1, rank=9, win_size=5)
     if preType == "C":
-        return ModelPara(300, "cemodel", 67)
+        return ModelPara(300, "cemodel", 67, para_w=0.1, rank=22, win_size=4)
     if preType == "B":
-        return ModelPara(81, "bsmodel", 55)
+        return ModelPara(81, "bsmodel", 55, para_w=0.2, rank=22, win_size=4)
     if preType == "E":
-        return ModelPara(81, "ecmodel", 82)
+        return ModelPara(81, "ecmodel", 82, para_w=0.1, rank=12, win_size=4)
     raise KeyError("Unsupported Type Name")
 
 
@@ -84,9 +89,8 @@ def getOptimalFea(
             fobjw.write("\n")
 
 
-def getFea(bestn, silce_fa):
+def getFea(mp: ModelPara, silce_fa):
     import PCSF
-    import pseKNC
 
     annotation = []
     sequences = []
@@ -100,10 +104,10 @@ def getFea(bestn, silce_fa):
     ), "There is no sequence that meets the requirements. Program Terminated."
     print("Feature Encoding(time-consuming)...\n...")
 
-    pseKNC.pseKNC(sequences, "pseFea.txt")
+    pseKNC.pseKNC(sequences, "pseFea.txt", mp.para_w, mp.rank, mp.win_size)
     PCSF.getPCSF(sequences, "pcsfFea.txt")
     merge2svmfile("pse&pcsfFea.txt", "pseFea.txt", "pcsfFea.txt")
-    getOptimalFea("ResultMRMR.txt", "pse&pcsfFea.txt", bestn, "optimalFea.txt")
+    getOptimalFea("ResultMRMR.txt", "pse&pcsfFea.txt", mp.bestn, "optimalFea.txt")
     return annotation
 
 
@@ -174,7 +178,7 @@ def main(species: str, seqfile: str, debug: bool):
         slide(pathPrefix / seqfile, mp.pretypelength), "slide_seq.fasta", "fasta-2line"
     )
     print("Sliding Window Finished.")
-    annotation = getFea(mp.bestn, "slide_seq.fasta")
+    annotation = getFea(mp, "slide_seq.fasta")
 
     runSVM(pathPrefix, Typepath)
     countp = generateResult(
